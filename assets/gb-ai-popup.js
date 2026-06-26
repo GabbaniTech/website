@@ -155,6 +155,7 @@
     document.addEventListener('DOMContentLoaded', function () {
         launchEl = buildLauncher(getLang());
         if (seen()) return;
+        if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
         setTimeout(function () {
             try {
                 sessionStorage.setItem(KEY, '1');
