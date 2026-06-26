@@ -4,3 +4,9 @@
 *~
 .wrangler/
 node_modules/
+
+# Test + coverage artifacts. The screenshot baselines under
+# e2e/__screenshots__/ are committed on purpose and are NOT ignored.
+coverage/
+playwright-report/
+test-results/
