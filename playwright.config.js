@@ -1,6 +1,13 @@
 import { defineConfig, devices } from '@playwright/test';
+import { PORT, PROJECTS } from './e2e/pages.mjs';
 
-const PORT = Number(process.env.PORT || 4173);
+// Device options per project name. The project NAMES live in e2e/pages.mjs (the
+// shared source of truth used by the spec and the check-visual gate); this map
+// only adds the per-project browser/viewport options.
+const DEVICES = {
+    desktop: { ...devices['Desktop Chrome'], viewport: { width: 1280, height: 800 } },
+    mobile: { ...devices['Pixel 7'] },
+};
 
 // Screenshots are rendered identically only within the same browser + OS, so
 // baselines are generated and compared inside the pinned Playwright container
@@ -13,7 +20,11 @@ export default defineConfig({
     forbidOnly: !!process.env.CI,
     retries: 0,
     workers: process.env.CI ? 2 : undefined,
-    reporter: [['list'], ['json', { outputFile: 'playwright-report/results.json' }]],
+    reporter: [
+        ['list'],
+        ['html', { open: 'never', outputFolder: 'playwright-report/html' }],
+        ['json', { outputFile: 'playwright-report/results.json' }],
+    ],
     snapshotPathTemplate: 'e2e/__screenshots__/{projectName}/{arg}{ext}',
     use: {
         baseURL: `http://localhost:${PORT}`,
@@ -27,13 +38,14 @@ export default defineConfig({
             maxDiffPixelRatio: 0,
         },
     },
-    projects: [
-        { name: 'desktop', use: { ...devices['Desktop Chrome'], viewport: { width: 1280, height: 800 } } },
-        { name: 'mobile', use: { ...devices['Pixel 7'] } },
-    ],
+    projects: PROJECTS.map((name) => {
+        if (!DEVICES[name]) throw new Error(`playwright.config: no device options for project "${name}"`);
+        return { name, use: DEVICES[name] };
+    }),
     webServer: {
         command: 'node scripts/serve.mjs',
         port: PORT,
+        env: { PORT: String(PORT) },
         reuseExistingServer: !process.env.CI,
     },
 });

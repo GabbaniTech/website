@@ -14,9 +14,20 @@ cd "$(dirname "$0")/.."
 VER="$(node -p "require('@playwright/test/package.json').version")"
 IMAGE="mcr.microsoft.com/playwright:v${VER}-noble"
 
+ARGS="${*:-}"
+RUN="npx playwright test ${ARGS}"
+# A compare run also executes the visual-coverage gate, exactly like CI. On a
+# baseline-update run there is nothing to compare, so the gate is skipped.
+case "$ARGS" in
+*--update-snapshots*) ;;
+*) RUN="${RUN} && node scripts/check-visual.mjs" ;;
+esac
+
+# npm 11 occasionally aborts with "Exit handler never called"; one retry keeps
+# the lockfile-strict install without flaking. Playwright only runs if install succeeds.
 exec docker run --rm \
     -v "$PWD":/work \
     -v /work/node_modules \
     -w /work \
     "$IMAGE" \
-    bash -c "npm ci --no-audit --no-fund || npm ci --no-audit --no-fund; npx playwright test ${*:-}"
+    bash -c "(npm ci --no-audit --no-fund || npm ci --no-audit --no-fund) && ${RUN}"

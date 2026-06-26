@@ -7,14 +7,32 @@ on:
 
 jobs:
     visual:
-        name: Visual regression
+        name: Screenshots
         runs-on: ubuntu-latest
-        # Pinned to the @playwright/test version in package.json so screenshots
-        # render identically to the committed baselines. Bump both together.
+        env:
+            # Single source for the Playwright version; the guard step below fails
+            # the build if package.json's pin drifts from it. Keep the container
+            # image tag and this value in lockstep when bumping Playwright.
+            PW_VERSION: '1.61.1'
         container:
             image: mcr.microsoft.com/playwright:v1.61.1-noble
         steps:
             - uses: actions/checkout@v4
+
+            - name: Guard — Playwright pin matches the container
+              run: |
+                  PKG=$(node -p "require('./package.json').devDependencies['@playwright/test']")
+                  echo "package.json @playwright/test=$PKG, container=$PW_VERSION"
+                  if [ "$PKG" != "$PW_VERSION" ]; then
+                      echo "::error::@playwright/test ($PKG) != container image ($PW_VERSION). Bump package.json and the playwright.yml image tag together, then regenerate baselines."
+                      exit 1
+                  fi
+
+            - name: Cache npm
+              uses: actions/cache@v4
+              with:
+                  path: ~/.npm
+                  key: npm-${{ hashFiles('package-lock.json') }}
 
             # npm 11 occasionally aborts with "Exit handler never called"; one
             # retry keeps the lockfile-strict install without flaking the gate.

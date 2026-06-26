@@ -18,7 +18,8 @@ jobs:
                   node-version: 22
                   cache: npm
 
-            - run: npm ci
+            - name: Install dependencies
+              run: npm ci
 
             # Formatting, HTML validity, structural completeness gate, and 100%
             # unit-test coverage of the shipped browser JS. Any failure fails the PR.

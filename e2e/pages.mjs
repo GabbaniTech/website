@@ -1,5 +1,12 @@
-// Single source of truth for the pages under visual test, shared by the
-// Playwright spec and the check-visual gate so neither can drift from the other.
+// Single source of truth shared across the test setup so nothing can drift:
+// the Playwright spec, the check-visual gate, the static server, and the
+// Playwright config all import these.
+
+// Port for the local/dev static server (scripts/serve.mjs) and the Playwright
+// webServer + baseURL. Defined once so the server and the runner always agree.
+export const PORT = 4173;
+
+// Pages under visual test, by name and path.
 export const PAGES = [
     { name: 'home-en', path: '/' },
     { name: 'home-de', path: '/de/' },

@@ -75,20 +75,20 @@ function internalToFile(target, fromFile) {
     return rel;
 }
 
-/** Classify a href/src reference. */
+/** Classify a href/src reference. Every branch returns the same { kind, value } shape. */
 function classify(ref) {
-    if (ref == null) return { kind: 'skip' };
-    const v = ref.trim();
-    if (v === '' || v.startsWith('#')) return { kind: v.startsWith('#') ? 'fragment' : 'skip', value: v };
-    if (/^(mailto:|tel:|data:|javascript:)/i.test(v)) return { kind: 'skip' };
+    const v = ref == null ? '' : ref.trim();
+    if (v === '') return { kind: 'skip', value: v };
+    if (v.startsWith('#')) return { kind: 'fragment', value: v };
+    if (/^(mailto:|tel:|data:|javascript:)/i.test(v)) return { kind: 'skip', value: v };
     if (v.startsWith('//')) {
         externalUrls.add(`https:${v}`);
-        return { kind: 'external' };
+        return { kind: 'external', value: v };
     }
     if (/^https?:\/\//i.test(v)) {
         if (v === ORIGIN || v.startsWith(`${ORIGIN}/`)) return { kind: 'internal', value: v };
         externalUrls.add(v);
-        return { kind: 'external' };
+        return { kind: 'external', value: v };
     }
     return { kind: 'internal', value: v };
 }
