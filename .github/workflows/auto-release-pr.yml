@@ -58,11 +58,11 @@ jobs:
                     "**Commits:** ${COMMIT_COUNT} new commit(s)" \
                     "" \
                     "### Preview" \
-                    "Verify changes on **[dev.gabbanitech.com](https://dev.gabbanitech.com)** before merging." \
+                    "Verify changes on **[dev.gabbani.tech](https://dev.gabbani.tech)** before merging." \
                     "" \
                     "### Checklist" \
                     "- [ ] Review all changes" \
-                    "- [ ] Verify on [dev.gabbanitech.com](https://dev.gabbanitech.com)" \
+                    "- [ ] Verify on [dev.gabbani.tech](https://dev.gabbani.tech)" \
                     "- [ ] Approve and merge when ready for production" \
                     > /tmp/pr-body.md
 
