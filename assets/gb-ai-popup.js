@@ -154,7 +154,7 @@
     }
     document.addEventListener('DOMContentLoaded', function () {
         launchEl = buildLauncher(getLang());
-        if (seen()) return;
+        if (seen() || navigator.webdriver) return;
         if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
         setTimeout(function () {
             try {

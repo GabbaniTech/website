@@ -63,9 +63,12 @@
         });
     }
 
-    // Live ticker — rotates the newest sale into a real-time dashboard
+    // Live ticker — rotates the newest sale into a real-time dashboard.
+    // Frozen for reduced-motion users and under automation (navigator.webdriver),
+    // so visual-regression screenshots stay deterministic.
     var ticker = document.querySelector('[data-ticker]');
-    if (ticker && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    var prefersReduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (ticker && !prefersReduced && !navigator.webdriver) {
         var sales = [
             { p: ticker.dataset.p0 || 'Luganighe sausage', g: '320 g', chf: '8.40', t: 'Till 2' },
             { p: ticker.dataset.p1 || 'Gruyère AOP', g: '250 g', chf: '7.10', t: 'Till 1' },
