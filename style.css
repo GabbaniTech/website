@@ -37,7 +37,9 @@
     --text: 17px;
     --lh: 1.7;
     --maxw: 1180px;
-    --gutter: 40px;
+    /* Side padding scales with the viewport so the large display headlines keep
+       breathing room at mid widths instead of hugging the edge. */
+    --gutter: clamp(28px, 4.2vw, 64px);
 
     --radius: 14px;
     --radius-sm: 10px;
@@ -2003,10 +2005,6 @@ h4 {
 }
 
 @media (max-width: 900px) {
-    :root {
-        --gutter: 24px;
-    }
-
     .hero .wrap {
         grid-template-columns: 1fr;
     }
