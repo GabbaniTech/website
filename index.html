@@ -106,19 +106,7 @@
                 ]
             }
         </script>
-        <script>
-            (function () {
-                try {
-                    if (sessionStorage.getItem('lang-chosen')) return;
-                    var lang = (navigator.language || '').toLowerCase().slice(0, 2);
-                    var supported = { de: '/de/', fr: '/fr/', it: '/it/', es: '/es/' };
-                    if (supported[lang]) {
-                        sessionStorage.setItem('lang-chosen', lang);
-                        window.location.replace(supported[lang]);
-                    }
-                } catch (e) {}
-            })();
-        </script>
+        <script src="assets/lang.js"></script>
     </head>
 
     <body>
@@ -151,8 +139,10 @@
                 </nav>
                 <div class="header-tools">
                     <div class="lang" id="lang">
-                        <button class="lang__current" aria-haspopup="true" aria-expanded="false">EN</button>
-                        <div class="lang__menu" role="menu">
+                        <button type="button" class="lang__current" aria-haspopup="true" aria-expanded="false">
+                            EN
+                        </button>
+                        <div class="lang__menu lang-dropdown" role="menu">
                             <a href="/" aria-current="true">
                                 English
                                 <span>EN</span>
@@ -176,7 +166,7 @@
                         </div>
                     </div>
                     <a href="/contact.html" class="btn btn--primary header-cta">Get a demo</a>
-                    <button class="nav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false">
+                    <button type="button" class="nav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false">
                         <span></span>
                         <span></span>
                         <span></span>

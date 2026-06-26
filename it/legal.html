@@ -6,12 +6,6 @@
         <title>Note legali e privacy · Gabbani Tech</title>
         <meta name="description" content="Note legali e informativa sulla privacy di Gabbani Tech, Lugano." />
         <meta name="robots" content="noindex" />
-        <link rel="alternate" hreflang="en" href="https://gabbani.tech/legal.html" />
-        <link rel="alternate" hreflang="de" href="https://gabbani.tech/de/legal.html" />
-        <link rel="alternate" hreflang="fr" href="https://gabbani.tech/fr/legal.html" />
-        <link rel="alternate" hreflang="it" href="https://gabbani.tech/it/legal.html" />
-        <link rel="alternate" hreflang="es" href="https://gabbani.tech/es/legal.html" />
-        <link rel="alternate" hreflang="x-default" href="https://gabbani.tech/legal.html" />
         <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -90,8 +84,10 @@
                 </nav>
                 <div class="header-tools">
                     <div class="lang" id="lang">
-                        <button class="lang__current" aria-haspopup="true" aria-expanded="false">IT</button>
-                        <div class="lang__menu" role="menu">
+                        <button type="button" class="lang__current" aria-haspopup="true" aria-expanded="false">
+                            IT
+                        </button>
+                        <div class="lang__menu lang-dropdown" role="menu">
                             <a href="/legal.html">
                                 English
                                 <span>EN</span>
@@ -115,7 +111,7 @@
                         </div>
                     </div>
                     <a href="/it/contact.html" class="btn btn--primary header-cta">Prenota una demo</a>
-                    <button class="nav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false">
+                    <button type="button" class="nav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false">
                         <span></span>
                         <span></span>
                         <span></span>

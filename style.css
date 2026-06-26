@@ -2100,3 +2100,7 @@ h4 {
         display: none;
     }
 }
+
+.hero.error-page {
+    min-height: 80vh;
+}
