@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Mentions légales &amp; confidentialité — Gabbani Tech</title>
+        <meta name="description" content="Mentions légales et politique de confidentialité de Gabbani Tech." />
+        <meta name="robots" content="noindex" />
+        <link rel="stylesheet" type="text/css" href="../style.css" />
+        <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg" />
+    </head>
+
+    <body>
+        <header class="fade-in">
+            <a href="/fr/" class="logo-link">
+                <span class="logo-text">Gabbani Tech</span>
+            </a>
+            <nav>
+                <a href="/fr/#about">À propos</a>
+                <a href="/fr/#services">Services</a>
+                <a href="/fr/#values">Valeurs</a>
+                <a href="/fr/#contact">Contact</a>
+            </nav>
+            <div class="lang-switcher">
+                <span class="lang-current">FR</span>
+                <div class="lang-dropdown">
+                    <a href="/legal.html">English</a>
+                    <a href="/de/legal.html">Deutsch</a>
+                    <a href="/fr/legal.html" class="active">Français</a>
+                    <a href="/it/legal.html">Italiano</a>
+                    <a href="/es/legal.html">Español</a>
+                </div>
+            </div>
+            <button class="nav-toggle" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </header>
+
+        <div class="legal-page">
+            <section>
+                <h1>Mentions légales</h1>
+                <h2>Éditeur</h2>
+                <p>
+                    Gabbani Tech
+                    <br />
+                    Example Street 1
+                    <br />
+                    8000 Example City
+                    <br />
+                    Switzerland
+                </p>
+                <p>
+                    E-mail :
+                    <a href="mailto:hello@gabbanitech.com">hello@gabbanitech.com</a>
+                </p>
+                <p>Registre du commerce / TVA : CHE-000.000.000 (placeholder)</p>
+            </section>
+
+            <section>
+                <h1>Confidentialité</h1>
+                <h2>Politique de confidentialité</h2>
+                <h3>Aperçu</h3>
+                <p>
+                    Nous prenons la protection de vos données personnelles au sérieux. Ce site web est volontairement
+                    minimaliste et collecte aussi peu de données que techniquement possible.
+                </p>
+                <h3>Hébergement</h3>
+                <p>
+                    Ce site est hébergé sur Cloudflare Pages. L'hébergeur peut traiter des données techniques d'accès
+                    (telles que l'adresse IP, le type de navigateur et l'heure d'accès) dans des fichiers journaux de
+                    serveur, aux fins de l'exploitation et de la sécurisation du service.
+                </p>
+                <h3>Cookies &amp; stockage local</h3>
+                <p>
+                    Nous n'utilisons pas de cookies de suivi. Nous enregistrons un unique indicateur technique dans le
+                    stockage de session de votre navigateur afin de mémoriser votre choix de langue. Il est effacé
+                    lorsque vous fermez l'onglet.
+                </p>
+                <h3>Contact</h3>
+                <p>
+                    Lorsque vous nous contactez par e-mail, nous traitons les informations que vous fournissez
+                    uniquement pour traiter votre demande.
+                </p>
+                <h3>Vos droits</h3>
+                <p>
+                    Vous pouvez à tout moment demander l'accès à vos données personnelles, leur rectification ou leur
+                    suppression en écrivant à
+                    <a href="mailto:hello@gabbanitech.com">hello@gabbanitech.com</a>
+                    .
+                </p>
+            </section>
+        </div>
+
+        <footer>
+            <div class="footer-content">
+                <span class="footer-name">Gabbani Tech</span>
+                <nav class="footer-nav">
+                    <a href="/fr/">Accueil</a>
+                    <a href="/fr/legal.html">Mentions légales &amp; confidentialité</a>
+                </nav>
+                <a href="https://github.com/GabbaniTech" class="footer-social" aria-label="GitHub">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"
+                        />
+                    </svg>
+                </a>
+            </div>
+        </footer>
+
+        <script>
+            document.querySelector('.nav-toggle').addEventListener('click', function () {
+                document.querySelector('header nav').classList.toggle('open');
+            });
+            document.querySelectorAll('.lang-switcher').forEach(function (el) {
+                el.addEventListener('click', function (e) {
+                    e.stopPropagation();
+                    el.classList.toggle('open');
+                });
+            });
+            document.addEventListener('click', function () {
+                document.querySelectorAll('.lang-switcher').forEach(function (el) {
+                    el.classList.remove('open');
+                });
+            });
+        </script>
+    </body>
+</html>
