@@ -3,80 +3,103 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>404 — Gabbani Tech</title>
+        <title>Page not found · Gabbani Tech</title>
         <meta name="robots" content="noindex" />
-        <link rel="stylesheet" type="text/css" href="/style.css" />
         <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="/style.css" />
     </head>
 
     <body>
-        <header class="fade-in">
-            <a href="/" class="logo-link">
-                <span class="logo-text">Gabbani Tech</span>
-            </a>
-            <nav>
-                <a href="/#about">About</a>
-                <a href="/#services">Services</a>
-                <a href="/#values">Values</a>
-                <a href="/#contact">Contact</a>
-            </nav>
-            <div class="lang-switcher">
-                <span class="lang-current">EN</span>
-                <div class="lang-dropdown">
-                    <a href="/" class="active">English</a>
-                    <a href="/de/">Deutsch</a>
-                    <a href="/fr/">Français</a>
-                    <a href="/it/">Italiano</a>
-                    <a href="/es/">Español</a>
+        <header class="site-header" id="header">
+            <div class="wrap">
+                <a href="/" class="brand" aria-label="Gabbani Tech home">
+                    <svg class="brand__mark" viewBox="0 0 100 100" aria-hidden="true">
+                        <g
+                            transform="translate(50 47) scale(0.6) translate(-36 -52)"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="14"
+                        >
+                            <path d="M50 12 L34 12 A22 22 0 0 0 12 34 L12 70 A22 22 0 0 0 34 92 L50 92" />
+                            <path d="M50 92 L60 92 L60 53 L41 53" />
+                        </g>
+                        <rect x="28" y="79" width="44" height="10" rx="2" fill="currentColor" />
+                    </svg>
+                    <span class="brand__type">
+                        <span class="brand__name">Gabbani</span>
+                        <span class="brand__sub">Tech · Lugano</span>
+                    </span>
+                </a>
+                <nav class="primary-nav" aria-label="Primary">
+                    <a href="/platform.html">Platform</a>
+                    <a href="/staffing.html">Staffing</a>
+                    <a href="/payments.html">Payments</a>
+                    <a href="/about.html">About</a>
+                    <a href="/contact.html">Contact</a>
+                </nav>
+                <div class="header-tools">
+                    <a href="/contact.html" class="btn btn--primary header-cta">Get a demo</a>
+                    <button class="nav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
                 </div>
             </div>
-            <button class="nav-toggle" aria-label="Menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
         </header>
 
-        <div class="hero fade-in" style="min-height: 80vh">
-            <div class="headline">
-                <h1 class="slide-up">404</h1>
-                <p class="slide-up delay-300">Page not found.</p>
-                <a href="/" class="button slide-up delay-600">Back to Home</a>
-            </div>
-        </div>
+        <main>
+            <section class="hero" style="min-height: 70vh">
+                <div class="wrap" style="display: block; text-align: center">
+                    <span class="eyebrow" style="justify-content: center">Error 404</span>
+                    <h1
+                        style="
+                            font-family: var(--display);
+                            font-size: clamp(80px, 18vw, 200px);
+                            line-height: 0.9;
+                            text-transform: uppercase;
+                            color: var(--bordeaux);
+                            margin: 18px 0 8px;
+                        "
+                    >
+                        404
+                    </h1>
+                    <h2 style="font-size: clamp(22px, 4vw, 34px); text-transform: uppercase">
+                        This page is off the menu
+                    </h2>
+                    <p class="lead" style="margin: 18px auto 32px; max-width: 44ch">
+                        The page you are looking for has moved or never existed. Let's get you back to the counter.
+                    </p>
+                    <a href="/" class="btn btn--primary btn--lg">Back to home</a>
+                </div>
+            </section>
+        </main>
 
-        <footer>
-            <div class="footer-content">
-                <span class="footer-name">Gabbani Tech</span>
-                <nav class="footer-nav">
-                    <a href="/">Home</a>
-                    <a href="/legal.html">Legal &amp; Privacy</a>
-                </nav>
-                <a href="https://github.com/GabbaniTech" class="footer-social" aria-label="GitHub">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                        <path
-                            d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"
-                        />
-                    </svg>
-                </a>
+        <footer class="site-footer">
+            <div class="wrap">
+                <div class="footer-bottom" style="margin-top: 0; border-top: none; padding-top: 0">
+                    <p>© 2026 Gabbani Tech, Lugano, Switzerland</p>
+                    <div class="footer-social">
+                        <a href="https://github.com/GabbaniTech" aria-label="GitHub">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"
+                                />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
             </div>
         </footer>
 
-        <script>
-            document.querySelector('.nav-toggle').addEventListener('click', function () {
-                document.querySelector('header nav').classList.toggle('open');
-            });
-            document.querySelectorAll('.lang-switcher').forEach(function (el) {
-                el.addEventListener('click', function (e) {
-                    e.stopPropagation();
-                    el.classList.toggle('open');
-                });
-            });
-            document.addEventListener('click', function () {
-                document.querySelectorAll('.lang-switcher').forEach(function (el) {
-                    el.classList.remove('open');
-                });
-            });
-        </script>
+        <script src="/assets/site.js"></script>
+        <script src="/assets/gb-ai-popup.js" defer></script>
+        <script src="/assets/sea-attribution.js" defer></script>
     </body>
 </html>

@@ -1,0 +1,392 @@
+<!doctype html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>À propos · Gabbani Tech</title>
+        <meta
+            name="description"
+            content="Gabbani Tech est une startup de Lugano qui développe une technologie de vente au détail en temps réel, née du nom Gabbani qui sert la ville depuis 1937."
+        />
+        <meta property="og:title" content="À propos · Gabbani Tech" />
+        <meta
+            property="og:description"
+            content="Une startup de Lugano qui transpose en logiciel une passion du comptoir née en 1937."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://gabbani.tech/fr/about.html" />
+        <meta property="og:image" content="https://gabbani.tech/assets/og-image.png" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:image" content="https://gabbani.tech/assets/og-image.png" />
+        <link rel="alternate" hreflang="en" href="https://gabbani.tech/about.html" />
+        <link rel="alternate" hreflang="de" href="https://gabbani.tech/de/about.html" />
+        <link rel="alternate" hreflang="fr" href="https://gabbani.tech/fr/about.html" />
+        <link rel="alternate" hreflang="it" href="https://gabbani.tech/it/about.html" />
+        <link rel="alternate" hreflang="es" href="https://gabbani.tech/es/about.html" />
+        <link rel="alternate" hreflang="x-default" href="https://gabbani.tech/about.html" />
+        <link rel="canonical" href="https://gabbani.tech/fr/about.html" />
+        <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="../style.css" />
+        <link rel="alternate" type="text/plain" href="https://gabbani.tech/llms.txt" title="LLM-readable profile" />
+        <link
+            rel="alternate"
+            type="application/json"
+            href="https://gabbani.tech/ai-index.json"
+            title="AI-readable site index"
+        />
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@graph": [
+                    {
+                        "@type": "Organization",
+                        "@id": "https://gabbani.tech/#org",
+                        "name": "Gabbani Tech",
+                        "url": "https://gabbani.tech/",
+                        "email": "hello@gabbani.tech",
+                        "slogan": "Real-time retail technology from Lugano",
+                        "address": {
+                            "@type": "PostalAddress",
+                            "addressLocality": "Lugano",
+                            "addressRegion": "Ticino",
+                            "addressCountry": "CH"
+                        },
+                        "areaServed": "Lugano",
+                        "sameAs": ["https://github.com/GabbaniTech"]
+                    },
+                    {
+                        "@type": "WebSite",
+                        "@id": "https://gabbani.tech/#website",
+                        "url": "https://gabbani.tech/",
+                        "name": "Gabbani Tech",
+                        "publisher": { "@id": "https://gabbani.tech/#org" },
+                        "inLanguage": ["en", "de", "fr", "it", "es"]
+                    }
+                ]
+            }
+        </script>
+    </head>
+
+    <body>
+        <header class="site-header" id="header">
+            <div class="wrap">
+                <a href="/fr/" class="brand" aria-label="Accueil Gabbani Tech">
+                    <svg class="brand__mark" viewBox="0 0 100 100" aria-hidden="true">
+                        <g
+                            transform="translate(50 47) scale(0.6) translate(-36 -52)"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="14"
+                        >
+                            <path d="M50 12 L34 12 A22 22 0 0 0 12 34 L12 70 A22 22 0 0 0 34 92 L50 92" />
+                            <path d="M50 92 L60 92 L60 53 L41 53" />
+                        </g>
+                        <rect x="28" y="79" width="44" height="10" rx="2" fill="currentColor" />
+                    </svg>
+                    <span class="brand__type">
+                        <span class="brand__name">Gabbani</span>
+                        <span class="brand__sub">Tech · Lugano</span>
+                    </span>
+                </a>
+                <nav class="primary-nav" aria-label="Principale">
+                    <a href="/fr/platform.html">Plateforme</a>
+                    <a href="/fr/staffing.html">Personnel</a>
+                    <a href="/fr/payments.html">Paiements</a>
+                    <a href="/fr/about.html" aria-current="page">À propos</a>
+                    <a href="/fr/contact.html">Contact</a>
+                </nav>
+                <div class="header-tools">
+                    <div class="lang" id="lang">
+                        <button class="lang__current" aria-haspopup="true" aria-expanded="false">FR</button>
+                        <div class="lang__menu" role="menu">
+                            <a href="/about.html">
+                                English
+                                <span>EN</span>
+                            </a>
+                            <a href="/de/about.html">
+                                Deutsch
+                                <span>DE</span>
+                            </a>
+                            <a href="/fr/about.html" aria-current="true">
+                                Français
+                                <span>FR</span>
+                            </a>
+                            <a href="/it/about.html">
+                                Italiano
+                                <span>IT</span>
+                            </a>
+                            <a href="/es/about.html">
+                                Español
+                                <span>ES</span>
+                            </a>
+                        </div>
+                    </div>
+                    <a href="/fr/contact.html" class="btn btn--primary header-cta">Réserver une démo</a>
+                    <button class="nav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <!-- Hero -->
+            <section class="hero">
+                <div class="wrap" style="display: block">
+                    <div class="reveal in" style="max-width: 820px">
+                        <span class="eyebrow">À propos de Gabbani Tech</span>
+                        <h1
+                            style="
+                                margin-top: 22px;
+                                font-size: clamp(38px, 6vw, 72px);
+                                text-transform: uppercase;
+                                line-height: 0.98;
+                            "
+                        >
+                            Une passion du comptoir née en 1937, écrite en code
+                        </h1>
+                        <p class="lead" style="margin-top: 26px; max-width: 60ch">
+                            Gabbani Tech est une jeune entreprise de Lugano. Nous développons des logiciels pour les
+                            commerces qui vivent à leur comptoir, des boutiques et épiceries fines aux restaurants, et
+                            nous commençons là où nous le connaissons le mieux.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Story -->
+            <section class="section section--paper2">
+                <div class="wrap">
+                    <div class="feature">
+                        <div class="feature__body reveal">
+                            <span class="eyebrow">Nos racines</span>
+                            <h2>Né d'un nom de Lugano</h2>
+                            <p>
+                                Le nom Gabbani fait partie de Lugano depuis 1937 avec la boucherie, l'épicerie fine, le
+                                vin et l'hôtellerie, au service de toute la vieille ville. Des décennies au comptoir
+                                vous apprennent exactement ce qu'un commerçant a besoin de voir, et quand.
+                            </p>
+                            <p>
+                                Gabbani Tech prend cet instinct et le transforme en outils. Le premier est simple :
+                                permettre aux commerçants de voir chaque vente au moment où elle se produit, au lieu
+                                d'attendre la clôture des comptes.
+                            </p>
+                        </div>
+                        <div class="feature__media reveal d1">
+                            <div
+                                class="diagram"
+                                style="
+                                    display: grid;
+                                    gap: 16px;
+                                    place-items: center;
+                                    text-align: center;
+                                    padding: 44px 26px;
+                                "
+                            >
+                                <svg
+                                    class="brand__mark"
+                                    viewBox="0 0 100 100"
+                                    style="width: 84px; color: var(--bordeaux)"
+                                    aria-hidden="true"
+                                >
+                                    <g
+                                        transform="translate(50 47) scale(0.6) translate(-36 -52)"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="14"
+                                    >
+                                        <path d="M50 12 L34 12 A22 22 0 0 0 12 34 L12 70 A22 22 0 0 0 34 92 L50 92" />
+                                        <path d="M50 92 L60 92 L60 53 L41 53" />
+                                    </g>
+                                    <rect x="28" y="79" width="44" height="10" rx="2" fill="currentColor" />
+                                </svg>
+                                <p
+                                    style="
+                                        font-family: var(--display);
+                                        text-transform: uppercase;
+                                        letter-spacing: 0.16em;
+                                        font-size: 22px;
+                                        color: var(--ink);
+                                        margin: 0;
+                                    "
+                                >
+                                    Gabbani
+                                </p>
+                                <p
+                                    class="muted"
+                                    style="letter-spacing: 0.4em; text-transform: uppercase; font-size: 11px; margin: 0"
+                                >
+                                    Lugano · Depuis 1937
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Mission -->
+            <section class="section">
+                <div class="wrap">
+                    <div class="section-head reveal center" style="text-align: center">
+                        <span class="eyebrow" style="justify-content: center">Ce qui nous anime</span>
+                        <h2>Un logiciel qui respecte le terrain</h2>
+                        <p class="lead">
+                            Les bons outils se fondent dans le travail. Les nôtres tournent discrètement aux côtés de la
+                            caisse que votre équipe connaît déjà, et donnent au commerçant une vue claire et honnête de
+                            la journée à mesure qu'elle se déroule.
+                        </p>
+                    </div>
+                    <div class="grid grid--3" style="margin-top: 48px">
+                        <article class="card reveal">
+                            <div class="card__num">01</div>
+                            <h3 style="margin-top: 14px">Proches du comptoir</h3>
+                            <p>
+                                Nous construisons pour les personnes derrière la balance, pas pour le tableur d'un siège
+                                social.
+                            </p>
+                        </article>
+                        <article class="card reveal d1">
+                            <div class="card__num">02</div>
+                            <h3 style="margin-top: 14px">Des chiffres honnêtes</h3>
+                            <p>
+                                Le poids et le prix viennent directement du matériel. Ce que vous voyez est ce qui a été
+                                vendu.
+                            </p>
+                        </article>
+                        <article class="card reveal d2">
+                            <div class="card__num">03</div>
+                            <h3 style="margin-top: 14px">Lugano d'abord</h3>
+                            <p>
+                                Nous commençons chez nous, avec ses boutiques, sa météo et ses monnaies, et nous
+                                grandissons à partir de là.
+                            </p>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Startup band -->
+            <section class="section section--ink">
+                <div class="wrap">
+                    <div class="feature">
+                        <div class="feature__body reveal">
+                            <span class="eyebrow">Où nous en sommes</span>
+                            <h2>Une startup, par choix</h2>
+                            <p>
+                                Nous sommes petits et au début de l'aventure, et cela nous plaît ainsi. Cela signifie
+                                que nous nous asseyons avec nos premiers clients en personne, que nous livrons vite, et
+                                que nous façonnons le produit autour de vrais comptoirs à Lugano plutôt que d'une
+                                feuille de route tracée de loin.
+                            </p>
+                            <a href="/fr/contact.html" class="btn btn--ghost">Travailler avec nous</a>
+                        </div>
+                        <div class="feature__media reveal d1">
+                            <dl class="hero__meta" style="border: none; margin: 0; padding: 0; gap: 36px">
+                                <div>
+                                    <dt style="color: var(--on-night)">1937</dt>
+                                    <dd>Le nom est né</dd>
+                                </div>
+                                <div>
+                                    <dt style="color: var(--on-night)">2026</dt>
+                                    <dd>Gabbani Tech fondée</dd>
+                                </div>
+                                <div>
+                                    <dt style="color: var(--on-night)">1</dt>
+                                    <dd>Ville pour démarrer : Lugano</dd>
+                                </div>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CTA -->
+            <section class="section section--paper2 cta-band">
+                <div class="wrap reveal">
+                    <span class="eyebrow" style="justify-content: center">Parlons-en</span>
+                    <h2 style="margin-top: 18px">Parlez-nous de votre comptoir</h2>
+                    <p class="lead">
+                        Nous serions ravis d'entendre comment votre boutique fonctionne, et de vous montrer à quoi
+                        ressemble le temps réel.
+                    </p>
+                    <a href="/fr/contact.html" class="btn btn--primary btn--lg">Nous contacter</a>
+                </div>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <div class="wrap">
+                <div class="footer-top">
+                    <div class="footer-brand">
+                        <a href="/fr/" class="brand" aria-label="Accueil Gabbani Tech">
+                            <svg class="brand__mark" viewBox="0 0 100 100" aria-hidden="true">
+                                <g
+                                    transform="translate(50 47) scale(0.6) translate(-36 -52)"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="14"
+                                >
+                                    <path d="M50 12 L34 12 A22 22 0 0 0 12 34 L12 70 A22 22 0 0 0 34 92 L50 92" />
+                                    <path d="M50 92 L60 92 L60 53 L41 53" />
+                                </g>
+                                <rect x="28" y="79" width="44" height="10" rx="2" fill="currentColor" />
+                            </svg>
+                            <span class="brand__type">
+                                <span class="brand__name">Gabbani</span>
+                                <span class="brand__sub">Tech · Lugano</span>
+                            </span>
+                        </a>
+                        <p>
+                            Technologie de vente au détail en temps réel, née d'une institution de Lugano qui sert la
+                            ville depuis 1937.
+                        </p>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Produit</h4>
+                        <a href="/fr/platform.html">Caisse en temps réel</a>
+                        <a href="/fr/staffing.html">Planification selon la météo</a>
+                        <a href="/fr/payments.html">Paiements en crypto</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Entreprise</h4>
+                        <a href="/fr/about.html">À propos</a>
+                        <a href="/fr/contact.html">Contact</a>
+                        <a href="/fr/legal.html">Mentions légales &amp; confidentialité</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Contact</h4>
+                        <a href="mailto:hello@gabbani.tech">hello@gabbani.tech</a>
+                        <a href="/fr/contact.html">Réserver une démo</a>
+                        <span class="footer-place" style="color: var(--on-night-muted); font-size: 14.5px">
+                            Lugano, Suisse
+                        </span>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>© 2026 Gabbani Tech, Lugano, Suisse</p>
+                    <div class="footer-social">
+                        <a href="https://github.com/GabbaniTech" aria-label="GitHub">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"
+                                />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="../assets/site.js"></script>
+        <script src="../assets/gb-ai-popup.js" defer></script>
+        <script src="../assets/sea-attribution.js" defer></script>
+    </body>
+</html>

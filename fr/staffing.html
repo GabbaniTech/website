@@ -1,0 +1,705 @@
+<!doctype html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Planification selon la météo · Gabbani Tech</title>
+        <meta
+            name="description"
+            content="Gabbani Tech lit les prévisions météo et prépare automatiquement les plannings de votre terrasse : plus de personnel par beau temps, moins sous la pluie. Planifiez aussi les heures réduites et les jours de congé. Conçu pour Lugano."
+        />
+        <meta property="og:title" content="Planification selon la météo · Gabbani Tech" />
+        <meta
+            property="og:description"
+            content="Laissez les prévisions écrire le planning. Planification automatique des équipes pour terrasses et service en extérieur."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://gabbani.tech/fr/staffing.html" />
+        <meta property="og:image" content="https://gabbani.tech/assets/og-image.png" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:image" content="https://gabbani.tech/assets/og-image.png" />
+        <link rel="alternate" hreflang="en" href="https://gabbani.tech/staffing.html" />
+        <link rel="alternate" hreflang="de" href="https://gabbani.tech/de/staffing.html" />
+        <link rel="alternate" hreflang="fr" href="https://gabbani.tech/fr/staffing.html" />
+        <link rel="alternate" hreflang="it" href="https://gabbani.tech/it/staffing.html" />
+        <link rel="alternate" hreflang="es" href="https://gabbani.tech/es/staffing.html" />
+        <link rel="alternate" hreflang="x-default" href="https://gabbani.tech/staffing.html" />
+        <link rel="canonical" href="https://gabbani.tech/fr/staffing.html" />
+        <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="../style.css" />
+        <link rel="alternate" type="text/plain" href="https://gabbani.tech/llms.txt" title="LLM-readable profile" />
+        <link
+            rel="alternate"
+            type="application/json"
+            href="https://gabbani.tech/ai-index.json"
+            title="AI-readable site index"
+        />
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@graph": [
+                    {
+                        "@type": "Organization",
+                        "@id": "https://gabbani.tech/#org",
+                        "name": "Gabbani Tech",
+                        "url": "https://gabbani.tech/",
+                        "email": "hello@gabbani.tech",
+                        "slogan": "Real-time retail technology from Lugano",
+                        "address": {
+                            "@type": "PostalAddress",
+                            "addressLocality": "Lugano",
+                            "addressRegion": "Ticino",
+                            "addressCountry": "CH"
+                        },
+                        "areaServed": "Lugano",
+                        "sameAs": ["https://github.com/GabbaniTech"]
+                    },
+                    {
+                        "@type": "WebSite",
+                        "@id": "https://gabbani.tech/#website",
+                        "url": "https://gabbani.tech/",
+                        "name": "Gabbani Tech",
+                        "publisher": { "@id": "https://gabbani.tech/#org" },
+                        "inLanguage": ["en", "de", "fr", "it", "es"]
+                    }
+                ]
+            }
+        </script>
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "Service",
+                "name": "Weather-smart staffing",
+                "serviceType": "Staff scheduling",
+                "provider": { "@id": "https://gabbani.tech/#org" },
+                "areaServed": "Lugano, Switzerland",
+                "url": "https://gabbani.tech/staffing.html",
+                "description": "Forecast-driven shift planning for terraces and outdoor service, with reduced-hours targets, employee-picked free days, and scheduling rules such as one free Sunday for everyone."
+            }
+        </script>
+    </head>
+
+    <body>
+        <header class="site-header" id="header">
+            <div class="wrap">
+                <a href="/fr/" class="brand" aria-label="Accueil Gabbani Tech">
+                    <svg class="brand__mark" viewBox="0 0 100 100" aria-hidden="true">
+                        <g
+                            transform="translate(50 47) scale(0.6) translate(-36 -52)"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="14"
+                        >
+                            <path d="M50 12 L34 12 A22 22 0 0 0 12 34 L12 70 A22 22 0 0 0 34 92 L50 92" />
+                            <path d="M50 92 L60 92 L60 53 L41 53" />
+                        </g>
+                        <rect x="28" y="79" width="44" height="10" rx="2" fill="currentColor" />
+                    </svg>
+                    <span class="brand__type">
+                        <span class="brand__name">Gabbani</span>
+                        <span class="brand__sub">Tech · Lugano</span>
+                    </span>
+                </a>
+                <nav class="primary-nav" aria-label="Principale">
+                    <a href="/fr/platform.html">Plateforme</a>
+                    <a href="/fr/staffing.html" aria-current="page">Personnel</a>
+                    <a href="/fr/payments.html">Paiements</a>
+                    <a href="/fr/about.html">À propos</a>
+                    <a href="/fr/contact.html">Contact</a>
+                </nav>
+                <div class="header-tools">
+                    <div class="lang" id="lang">
+                        <button class="lang__current" aria-haspopup="true" aria-expanded="false">FR</button>
+                        <div class="lang__menu" role="menu">
+                            <a href="/staffing.html">
+                                English
+                                <span>EN</span>
+                            </a>
+                            <a href="/de/staffing.html">
+                                Deutsch
+                                <span>DE</span>
+                            </a>
+                            <a href="/fr/staffing.html" aria-current="true">
+                                Français
+                                <span>FR</span>
+                            </a>
+                            <a href="/it/staffing.html">
+                                Italiano
+                                <span>IT</span>
+                            </a>
+                            <a href="/es/staffing.html">
+                                Español
+                                <span>ES</span>
+                            </a>
+                        </div>
+                    </div>
+                    <a href="/fr/contact.html" class="btn btn--primary header-cta">Réserver une démo</a>
+                    <button class="nav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <!-- Hero -->
+            <section class="hero">
+                <div class="wrap">
+                    <div class="hero__copy reveal in">
+                        <span class="eyebrow">Planification selon la météo</span>
+                        <h1>
+                            Laissez les prévisions
+                            <em>écrire</em>
+                            le planning
+                        </h1>
+                        <p class="lead">
+                            Pour les terrasses et le service en extérieur, la météo fait l'activité. Gabbani Tech lit
+                            les prévisions et propose un planning d'équipe automatiquement, pour qu'un samedi ensoleillé
+                            soit au complet et qu'un jour de pluie ne le soit jamais. Essayez : touchez le soleil ou la
+                            pluie.
+                        </p>
+                        <div class="hero__cta">
+                            <a href="/fr/contact.html" class="btn btn--primary btn--lg">Réserver une démo</a>
+                            <a href="#scheduling" class="btn btn--ghost btn--lg">Heures &amp; jours de congé</a>
+                        </div>
+                    </div>
+                    <div class="hero__media reveal in d1">
+                        <div class="diagram">
+                            <div class="diagram__cap">
+                                <span>Terrasse du samedi</span>
+                                <span>Planning généré automatiquement</span>
+                            </div>
+                            <div class="weather" data-weather-toggle>
+                                <button type="button" class="weather__chip" data-weather="sun" aria-pressed="true">
+                                    <svg width="26" height="26" viewBox="0 0 24 24" fill="none">
+                                        <circle cx="12" cy="12" r="4.5" stroke="currentColor" stroke-width="1.7" />
+                                        <path
+                                            d="M12 3v2m0 14v2M3 12h2m14 0h2M5.6 5.6l1.4 1.4m10 10l1.4 1.4m0-12.8l-1.4 1.4m-10 10l-1.4 1.4"
+                                            stroke="currentColor"
+                                            stroke-width="1.7"
+                                            stroke-linecap="round"
+                                        />
+                                    </svg>
+                                    <strong>Ensoleillé · 27°</strong>
+                                    <span>Terrasse pleine attendue</span>
+                                </button>
+                                <button type="button" class="weather__chip" data-weather="rain" aria-pressed="false">
+                                    <svg width="26" height="26" viewBox="0 0 24 24" fill="none">
+                                        <path
+                                            d="M7 16a4 4 0 010-8 5 5 0 019.6 1.5A3.5 3.5 0 0117 16H7z"
+                                            stroke="currentColor"
+                                            stroke-width="1.7"
+                                            stroke-linejoin="round"
+                                        />
+                                        <path
+                                            d="M9 19l-1 2m4-2l-1 2m4-2l-1 2"
+                                            stroke="currentColor"
+                                            stroke-width="1.7"
+                                            stroke-linecap="round"
+                                        />
+                                    </svg>
+                                    <strong>Pluie · 14°</strong>
+                                    <span>Intérieur uniquement</span>
+                                </button>
+                            </div>
+                            <div class="roster">
+                                <div class="roster__row" data-sun="6" data-rain="1" data-max="6">
+                                    <b>Terrasse</b>
+                                    <span class="roster__bar"></span>
+                                    <span class="roster__count">
+                                        <strong>6</strong>
+                                        personnes
+                                    </span>
+                                </div>
+                                <div class="roster__row" data-sun="4" data-rain="3" data-max="5">
+                                    <b>Bar</b>
+                                    <span class="roster__bar"></span>
+                                    <span class="roster__count">
+                                        <strong>4</strong>
+                                        personnes
+                                    </span>
+                                </div>
+                                <div class="roster__row" data-sun="5" data-rain="3" data-max="6">
+                                    <b>Cuisine</b>
+                                    <span class="roster__bar"></span>
+                                    <span class="roster__count">
+                                        <strong>5</strong>
+                                        personnes
+                                    </span>
+                                </div>
+                                <div class="roster__row" data-sun="4" data-rain="2" data-max="5">
+                                    <b>Service</b>
+                                    <span class="roster__bar"></span>
+                                    <span class="roster__count">
+                                        <strong>4</strong>
+                                        personnes
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="capacity" style="margin-top: 14px">
+                                <span class="capacity__val" data-cap-val>100%</span>
+                                <div class="capacity__track">
+                                    <span class="capacity__fill" data-cap-fill style="width: 100%"></span>
+                                </div>
+                                <span style="font-size: 12px; color: var(--muted); white-space: nowrap">
+                                    de l'équipe complète
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- How it works -->
+            <section class="section section--ink" id="how">
+                <div class="wrap">
+                    <div class="section-head reveal">
+                        <span class="eyebrow">Comment ça marche</span>
+                        <h2>Prévisions en entrée, planning en sortie</h2>
+                        <p class="lead">
+                            Le système surveille la semaine à venir et transforme la météo en une proposition de
+                            planning que vous pouvez ajuster et valider.
+                        </p>
+                    </div>
+                    <div class="steps" style="margin-top: 40px">
+                        <div class="step reveal">
+                            <span class="step__n">1</span>
+                            <div>
+                                <h3>Lire les prévisions</h3>
+                                <p>
+                                    Gabbani Tech récupère les prévisions locales de Lugano pour les jours à venir :
+                                    température, pluie, ensoleillement et vent.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="step reveal">
+                            <span class="step__n">2</span>
+                            <div>
+                                <h3>Évaluer la journée</h3>
+                                <p>
+                                    Le beau temps signifie une terrasse animée ; une journée froide et humide signifie
+                                    service en intérieur uniquement. Le système classe chaque jour en conséquence.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="step reveal">
+                            <span class="step__n">3</span>
+                            <div>
+                                <h3>Préparer le planning</h3>
+                                <p>
+                                    Il propose combien de personnes chaque zone nécessite et construit un planning
+                                    adapté à l'affluence attendue.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="step reveal">
+                            <span class="step__n">4</span>
+                            <div>
+                                <h3>Vous validez</h3>
+                                <p>
+                                    Le planning reste toujours une proposition. Vous le relisez, l'ajustez et le
+                                    confirmez. Le système ne planifie jamais personne tout seul.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Comparison -->
+            <section class="section">
+                <div class="wrap">
+                    <div class="section-head reveal">
+                        <span class="eyebrow">Soleil ou pluie</span>
+                        <h2>Deux prévisions, deux plannings</h2>
+                    </div>
+                    <div class="grid grid--2" style="margin-top: 44px">
+                        <article class="card reveal">
+                            <div class="card__icon">
+                                <svg width="26" height="26" viewBox="0 0 24 24" fill="none">
+                                    <circle cx="12" cy="12" r="4.5" stroke="currentColor" stroke-width="1.7" />
+                                    <path
+                                        d="M12 3v2m0 14v2M3 12h2m14 0h2M5.6 5.6l1.4 1.4m10 10l1.4 1.4m0-12.8l-1.4 1.4m-10 10l-1.4 1.4"
+                                        stroke="currentColor"
+                                        stroke-width="1.7"
+                                        stroke-linecap="round"
+                                    />
+                                </svg>
+                            </div>
+                            <h3>Samedi ensoleillé</h3>
+                            <p>
+                                La terrasse se remplit en milieu de journée. Le planning met des équipes complètes en
+                                terrasse et au service, avec le bar et la cuisine prêts pour le coup de feu.
+                            </p>
+                            <div class="roster" style="margin-top: 18px">
+                                <div class="roster__row">
+                                    <b>Terrasse</b>
+                                    <span class="roster__bar" style="width: 92%"></span>
+                                    <span class="roster__count">6</span>
+                                </div>
+                                <div class="roster__row">
+                                    <b>Service</b>
+                                    <span class="roster__bar" style="width: 80%"></span>
+                                    <span class="roster__count">5</span>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="card reveal d1">
+                            <div class="card__icon">
+                                <svg width="26" height="26" viewBox="0 0 24 24" fill="none">
+                                    <path
+                                        d="M7 16a4 4 0 010-8 5 5 0 019.6 1.5A3.5 3.5 0 0117 16H7z"
+                                        stroke="currentColor"
+                                        stroke-width="1.7"
+                                        stroke-linejoin="round"
+                                    />
+                                    <path
+                                        d="M9 19l-1 2m4-2l-1 2m4-2l-1 2"
+                                        stroke="currentColor"
+                                        stroke-width="1.7"
+                                        stroke-linecap="round"
+                                    />
+                                </svg>
+                            </div>
+                            <h3>Samedi pluvieux</h3>
+                            <p>
+                                La terrasse reste fermée. Le planning réduit l'équipe en extérieur et garde juste ce
+                                qu'il faut pour un service en intérieur régulier, sans personnel inoccupé.
+                            </p>
+                            <div class="roster" style="margin-top: 18px">
+                                <div class="roster__row">
+                                    <b>Terrasse</b>
+                                    <span class="roster__bar" style="width: 16%"></span>
+                                    <span class="roster__count">1</span>
+                                </div>
+                                <div class="roster__row">
+                                    <b>Service</b>
+                                    <span class="roster__bar" style="width: 48%"></span>
+                                    <span class="roster__count">3</span>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Hours & days off -->
+            <section class="section section--paper2" id="scheduling">
+                <div class="wrap">
+                    <div class="feature feature--reverse">
+                        <div class="feature__body reveal">
+                            <span class="eyebrow">Heures &amp; jours de congé</span>
+                            <h2>Planifiez des semaines plus légères, équitablement</h2>
+                            <p>
+                                La météo n'est qu'une partie de l'histoire. Quand vous voulez offrir un répit à
+                                l'équipe, fixez un objectif, laissez chacun choisir ses jours et laissez le
+                                planificateur respecter vos règles automatiquement.
+                            </p>
+                            <ul class="checks">
+                                <li>
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                        <path
+                                            d="M20 6L9 17l-5-5"
+                                            stroke="currentColor"
+                                            stroke-width="2.2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        />
+                                    </svg>
+                                    <span>
+                                        <strong>Planifiez 10% d'heures en moins</strong>
+                                        sur toute l'équipe pour une semaine plus calme
+                                    </span>
+                                </li>
+                                <li>
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                        <path
+                                            d="M20 6L9 17l-5-5"
+                                            stroke="currentColor"
+                                            stroke-width="2.2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        />
+                                    </svg>
+                                    <span>
+                                        <strong>Jours de congé sur un calendrier partagé</strong>
+                                        que le personnel choisit lui-même
+                                    </span>
+                                </li>
+                                <li>
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                        <path
+                                            d="M20 6L9 17l-5-5"
+                                            stroke="currentColor"
+                                            stroke-width="2.2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        />
+                                    </svg>
+                                    <span>
+                                        <strong>Des règles que le planificateur respecte</strong>
+                                        , comme un dimanche de congé pour tout le monde
+                                    </span>
+                                </li>
+                            </ul>
+                            <a href="/fr/contact.html" class="btn btn--primary">Réserver une démo</a>
+                        </div>
+
+                        <div class="feature__media reveal d1">
+                            <div class="diagram">
+                                <div class="diagram__cap">
+                                    <span>Planning de juin</span>
+                                    <span>Touchez un jour pour l'accorder</span>
+                                </div>
+                                <div class="capacity" style="margin-bottom: 14px">
+                                    <span class="capacity__val">90%</span>
+                                    <div class="capacity__track">
+                                        <span class="capacity__fill" style="width: 90%"></span>
+                                    </div>
+                                    <span style="font-size: 12px; color: var(--muted); white-space: nowrap">
+                                        10% d'heures en moins
+                                    </span>
+                                </div>
+                                <div class="cal" data-calendar>
+                                    <div class="cal__head">
+                                        <span>Juin 2026</span>
+                                        <span>Jours de congé</span>
+                                    </div>
+                                    <div class="cal__grid">
+                                        <span class="cal__dow">Lu</span>
+                                        <span class="cal__dow">Ma</span>
+                                        <span class="cal__dow">Me</span>
+                                        <span class="cal__dow">Je</span>
+                                        <span class="cal__dow">Ve</span>
+                                        <span class="cal__dow">Sa</span>
+                                        <span class="cal__dow">Di</span>
+                                        <button type="button" class="cal__day" aria-pressed="false">1</button>
+                                        <button type="button" class="cal__day" aria-pressed="false">2</button>
+                                        <button type="button" class="cal__day" aria-pressed="false">3</button>
+                                        <button type="button" class="cal__day" aria-pressed="false">4</button>
+                                        <button type="button" class="cal__day" aria-pressed="false">5</button>
+                                        <button type="button" class="cal__day" aria-pressed="false">6</button>
+                                        <button type="button" class="cal__day is-sunday" aria-pressed="false">7</button>
+                                        <button type="button" class="cal__day" aria-pressed="false">8</button>
+                                        <button type="button" class="cal__day is-off" aria-pressed="true">9</button>
+                                        <button type="button" class="cal__day" aria-pressed="false">10</button>
+                                        <button type="button" class="cal__day" aria-pressed="false">11</button>
+                                        <button type="button" class="cal__day" aria-pressed="false">12</button>
+                                        <button type="button" class="cal__day" aria-pressed="false">13</button>
+                                        <button type="button" class="cal__day is-sunday is-off" aria-pressed="true">
+                                            14
+                                        </button>
+                                        <button type="button" class="cal__day" aria-pressed="false">15</button>
+                                        <button type="button" class="cal__day" aria-pressed="false">16</button>
+                                        <button type="button" class="cal__day" aria-pressed="false">17</button>
+                                        <button type="button" class="cal__day" aria-pressed="false">18</button>
+                                        <button type="button" class="cal__day" aria-pressed="false">19</button>
+                                        <button type="button" class="cal__day" aria-pressed="false">20</button>
+                                        <button type="button" class="cal__day is-sunday" aria-pressed="false">
+                                            21
+                                        </button>
+                                        <button type="button" class="cal__day is-off" aria-pressed="true">22</button>
+                                        <button type="button" class="cal__day" aria-pressed="false">23</button>
+                                        <button type="button" class="cal__day" aria-pressed="false">24</button>
+                                        <button type="button" class="cal__day" aria-pressed="false">25</button>
+                                        <button type="button" class="cal__day" aria-pressed="false">26</button>
+                                        <button type="button" class="cal__day" aria-pressed="false">27</button>
+                                        <button type="button" class="cal__day is-sunday" aria-pressed="false">
+                                            28
+                                        </button>
+                                        <button type="button" class="cal__day" aria-pressed="false">29</button>
+                                        <button type="button" class="cal__day" aria-pressed="false">30</button>
+                                        <button type="button" class="cal__day" aria-pressed="false">31</button>
+                                        <button
+                                            type="button"
+                                            class="cal__day is-muted"
+                                            tabindex="-1"
+                                            aria-hidden="true"
+                                        ></button>
+                                        <button
+                                            type="button"
+                                            class="cal__day is-muted"
+                                            tabindex="-1"
+                                            aria-hidden="true"
+                                        ></button>
+                                        <button
+                                            type="button"
+                                            class="cal__day is-muted"
+                                            tabindex="-1"
+                                            aria-hidden="true"
+                                        ></button>
+                                        <button
+                                            type="button"
+                                            class="cal__day is-muted"
+                                            tabindex="-1"
+                                            aria-hidden="true"
+                                        ></button>
+                                    </div>
+                                    <div class="cal__legend">
+                                        <span>
+                                            <span class="cal__swatch cal__swatch--off"></span>
+                                            Jour de congé
+                                        </span>
+                                        <span>
+                                            <span class="cal__swatch cal__swatch--sun"></span>
+                                            Dimanche
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="rules" style="margin-top: 14px">
+                                    <div class="rule">
+                                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                                            <path
+                                                d="M5 12l4 4L19 6"
+                                                stroke="currentColor"
+                                                stroke-width="2"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                            />
+                                        </svg>
+                                        Chacun a un dimanche de congé
+                                        <span class="rule__toggle" aria-hidden="true"></span>
+                                    </div>
+                                    <div class="rule">
+                                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                                            <path
+                                                d="M5 12l4 4L19 6"
+                                                stroke="currentColor"
+                                                stroke-width="2"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                            />
+                                        </svg>
+                                        Au moins deux jours de congé d'affilée
+                                        <span class="rule__toggle" aria-hidden="true"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Benefits -->
+            <section class="section section--paper2">
+                <div class="wrap">
+                    <div class="section-head reveal">
+                        <span class="eyebrow">Pourquoi c'est important</span>
+                        <h2>Les bonnes personnes, pour la journée que vous aurez vraiment</h2>
+                    </div>
+                    <div class="grid grid--3" style="margin-top: 44px">
+                        <article class="card reveal">
+                            <h3>Plus de terrasses vides</h3>
+                            <p>
+                                Arrêtez de payer une équipe complète en extérieur sous la pluie, ou de courir partout
+                                quand le soleil revient.
+                            </p>
+                        </article>
+                        <article class="card reveal d1">
+                            <h3>Des horaires plus justes</h3>
+                            <p>
+                                Les plannings partent plus tôt, pour que votre équipe connaisse sa semaine à l'avance et
+                                non la veille au soir.
+                            </p>
+                        </article>
+                        <article class="card reveal d2">
+                            <h3>Vous gardez le contrôle</h3>
+                            <p>
+                                Chaque proposition est un point de départ. Rien n'est confirmé tant que vous ne le dites
+                                pas.
+                            </p>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CTA -->
+            <section class="section section--ink cta-band">
+                <div class="wrap reveal">
+                    <span class="eyebrow" style="justify-content: center">Planification selon la météo</span>
+                    <h2 style="margin-top: 18px">Planifiez la semaine prochaine selon le ciel</h2>
+                    <p class="lead">
+                        Réservez une démo et voyez un planning de jour ensoleillé et un planning de jour pluvieux
+                        construits côte à côte à partir de vraies prévisions.
+                    </p>
+                    <a href="/fr/contact.html" class="btn btn--primary btn--lg">Réserver une démo</a>
+                </div>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <div class="wrap">
+                <div class="footer-top">
+                    <div class="footer-brand">
+                        <a href="/fr/" class="brand" aria-label="Accueil Gabbani Tech">
+                            <svg class="brand__mark" viewBox="0 0 100 100" aria-hidden="true">
+                                <g
+                                    transform="translate(50 47) scale(0.6) translate(-36 -52)"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="14"
+                                >
+                                    <path d="M50 12 L34 12 A22 22 0 0 0 12 34 L12 70 A22 22 0 0 0 34 92 L50 92" />
+                                    <path d="M50 92 L60 92 L60 53 L41 53" />
+                                </g>
+                                <rect x="28" y="79" width="44" height="10" rx="2" fill="currentColor" />
+                            </svg>
+                            <span class="brand__type">
+                                <span class="brand__name">Gabbani</span>
+                                <span class="brand__sub">Tech · Lugano</span>
+                            </span>
+                        </a>
+                        <p>
+                            Technologie de commerce en temps réel, née d'une institution de Lugano qui sert la ville
+                            depuis 1937.
+                        </p>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Produit</h4>
+                        <a href="/fr/platform.html">Caisse en temps réel</a>
+                        <a href="/fr/staffing.html">Planification selon la météo</a>
+                        <a href="/fr/payments.html">Paiements en crypto</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Entreprise</h4>
+                        <a href="/fr/about.html">À propos</a>
+                        <a href="/fr/contact.html">Contact</a>
+                        <a href="/fr/legal.html">Mentions légales &amp; confidentialité</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Contact</h4>
+                        <a href="mailto:hello@gabbani.tech">hello@gabbani.tech</a>
+                        <a href="/fr/contact.html">Réserver une démo</a>
+                        <span class="footer-place" style="color: var(--on-night-muted); font-size: 14.5px">
+                            Lugano, Suisse
+                        </span>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>© 2026 Gabbani Tech, Lugano, Suisse</p>
+                    <div class="footer-social">
+                        <a href="https://github.com/GabbaniTech" aria-label="GitHub">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"
+                                />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="../assets/site.js"></script>
+        <script src="../assets/gb-ai-popup.js" defer></script>
+        <script src="../assets/sea-attribution.js" defer></script>
+    </body>
+</html>

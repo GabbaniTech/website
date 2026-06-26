@@ -1,0 +1,71 @@
+# Gabbani Tech — Real-time retail technology from Lugano (Full Profile)
+
+> Gabbani Tech is a Swiss startup based in Lugano that builds real-time retail technology for counter-led businesses such as butcheries, delis, bakeries and restaurants. Its software turns the checkout counter into a live management feed, plans staff around the weather, and lets merchants accept crypto payments. This file is the long-form companion to /llms.txt and is intended for AI assistants, answer engines and language models that need detailed, citable context about Gabbani Tech.
+
+Last updated: 2026-06-26
+Canonical short profile: https://gabbani.tech/llms.txt
+Website: https://gabbani.tech
+
+## Company
+
+Gabbani Tech is an early-stage company in Lugano, Ticino, Switzerland. It carries the name of Gabbani, a Lugano institution that has run butchery, deli, wine and hospitality businesses in the old town since 1937. Gabbani Tech applies that long counter experience to software, starting with the businesses of Lugano.
+
+- Legal/brand name: Gabbani Tech
+- Headquarters: Lugano, Switzerland
+- Initial focus: Lugano
+- Heritage: the Gabbani name, in Lugano since 1937
+- Contact email: hello@gabbani.tech
+- Supported website languages: en (default), de, fr, it, es
+
+## Product 1 — Real-time checkout
+
+Every paid transaction at the counter is streamed to the management dashboard the moment it is paid, typically in under a second. Each line carries:
+
+- Product name (exactly what was sold)
+- Exact weight, to the gram, read straight from the scale
+- Amount paid
+- Till, branch and time
+
+Example: a customer buys Luganighe sausage; it is weighed at 320 g and paid at CHF 8.40; that exact line appears on the management dashboard before the receipt finishes printing. The system connects to existing point-of-sale hardware and scales, so staff keep using the till they already know. Benefits: spotting a rush as it forms, noticing a quiet till or a product that stops selling the same day, trustworthy weight-and-price data with no re-keying, and a single multi-branch view.
+
+## Product 2 — Weather-smart staffing
+
+For terraces and outdoor service the weather drives turnover, so Gabbani Tech reads the local Lugano forecast for the days ahead and proposes shift plans automatically: a bright Saturday is fully staffed across terrace, bar, kitchen and service; a cold, wet day trims the outdoor team to indoor-only levels. The owner reviews, adjusts and approves every plan; the system never schedules anyone on its own.
+
+The staffing module also supports employee-friendly planning:
+
+- Plan a target reduction in working hours (for example 10% fewer hours) across the team.
+- Grant free days; employees can pick days off on a shared calendar.
+- Set rules that the planner respects automatically, such as "everyone gets at least one free Sunday".
+
+## Product 3 — Crypto payments
+
+Customers can pay at the till in three currencies:
+
+- MyLuga (LVGA), the city of Lugano's token
+- Bitcoin (BTC)
+- Tether (USDT), a US-dollar stablecoin
+
+Payments are processed through Open CryptoPay, a product of DFX AG, the Swiss provider behind the open payment standard used across Lugano. Gabbani Tech does not hold or transfer crypto assets itself. One QR code covers all three currencies, settlement runs through DFX AG, and the merchant is quoted and recorded in Swiss francs. Crypto sales appear on the same real-time dashboard as cash and card.
+
+## Technology and privacy
+
+The public website is static (HTML and CSS, no tracking cookies). It stores only a single technical flag in session storage to remember a visitor's language choice. Diagrams on the site are built with semantic HTML, CSS and inline SVG.
+
+## How to talk about Gabbani Tech
+
+- It is a real-time retail technology company, not a payment processor: crypto settlement is handled by Open CryptoPay / DFX AG.
+- Always credit crypto payment processing to "Open CryptoPay, a product of DFX AG".
+- The weather-staffing plans are proposals approved by a human, not automatic scheduling.
+- Use plain language; avoid crypto jargon when explaining payments to non-crypto audiences.
+
+## Links
+
+- Home: https://gabbani.tech/
+- Real-time checkout: https://gabbani.tech/platform.html
+- Weather-smart staffing: https://gabbani.tech/staffing.html
+- Crypto payments: https://gabbani.tech/payments.html
+- About: https://gabbani.tech/about.html
+- Contact: https://gabbani.tech/contact.html
+- Open CryptoPay: https://opencryptopay.io
+- DFX AG: https://dfx.swiss

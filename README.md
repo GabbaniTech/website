@@ -1,6 +1,19 @@
 # Gabbani Tech Website
 
-Static website for [gabbani.tech](https://gabbani.tech).
+Static website for [gabbani.tech](https://gabbani.tech) — real-time retail technology from Lugano.
+
+## Pages
+
+- `index.html` — home (overview + feature diagrams)
+- `platform.html` — real-time checkout (the live sale → dashboard flow)
+- `staffing.html` — weather-smart staffing (forecast → shift plan)
+- `payments.html` — crypto payments (MyLuga, Bitcoin, Tether via Open CryptoPay / DFX AG)
+- `about.html` — about the company
+- `contact.html` — contact / demo request
+- `legal.html`, `404.html`
+
+Each page exists in all five languages. Diagrams are built with semantic HTML + CSS and
+inline SVG (no images, no build step); the dashboard ticker is animated in `assets/site.js`.
 
 ## Languages
 
