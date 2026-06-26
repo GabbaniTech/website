@@ -1339,31 +1339,42 @@ h4 {
     margin-top: -8px;
 }
 
-/* Open CryptoPay lockup */
-.ocp-lockup {
-    display: inline-flex;
+/* Open CryptoPay brand lockup (white-on-dark, official dark treatment) */
+.ocp-brand {
+    display: flex;
     align-items: center;
-    gap: 14px;
-    padding: 16px 22px;
-    border: 1px solid var(--line);
-    border-radius: var(--radius);
-    background: var(--surface);
+    gap: 16px;
 }
 
-.section--ink .ocp-lockup {
-    background: #fff;
+.ocp-brand__mark {
+    width: 40px;
+    height: auto;
+    flex: none;
 }
 
-.ocp-lockup img {
-    height: 30px;
-    width: auto;
+.ocp-brand__word {
+    display: flex;
+    flex-direction: column;
+    font-family: var(--display);
+    font-weight: 600;
+    font-size: 19px;
+    line-height: 0.96;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--on-night);
 }
 
-.ocp-lockup span {
+.ocp-brand__div {
+    width: 1px;
+    height: 38px;
+    background: var(--line-night);
+}
+
+.ocp-brand__by {
     font-size: 13px;
-    color: var(--muted);
-    border-left: 1px solid var(--line);
-    padding-left: 14px;
+    line-height: 1.35;
+    color: var(--on-night-muted);
+    max-width: 13ch;
 }
 
 .node__logo {
@@ -1644,11 +1655,11 @@ h4 {
     right: 20px;
     bottom: 20px;
     z-index: 300;
-    width: min(340px, calc(100vw - 40px));
+    width: min(540px, calc(100vw - 32px));
     background: var(--surface);
     border: 1px solid var(--line);
     border-radius: 16px;
-    padding: 20px 20px 18px;
+    padding: 18px 20px 18px;
     box-shadow: 0 24px 60px -20px rgba(24, 21, 19, 0.5);
     transform: translateY(16px);
     opacity: 0;
@@ -1709,16 +1720,18 @@ h4 {
 
 .gb-ai-popup__pills {
     display: grid;
-    gap: 8px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
 }
 
 .gb-ai-pill {
     display: flex;
     align-items: center;
-    gap: 10px;
-    padding: 11px 14px;
+    justify-content: center;
+    gap: 9px;
+    padding: 13px 12px;
     border: 1px solid var(--line);
-    border-radius: 10px;
+    border-radius: 11px;
     color: var(--ink);
     font-weight: 500;
     font-size: 14px;
@@ -1731,7 +1744,7 @@ h4 {
 .gb-ai-pill:hover {
     border-color: var(--bordeaux);
     background: var(--bordeaux-tint);
-    transform: translateX(2px);
+    transform: translateY(-2px);
     color: var(--ink);
 }
 
@@ -1743,14 +1756,25 @@ h4 {
 }
 
 .gb-ai-pill__arrow {
-    width: 16px;
-    height: 16px;
-    margin-left: auto;
-    color: var(--muted-2);
+    display: none;
 }
 
-.gb-ai-pill:hover .gb-ai-pill__arrow {
-    color: var(--bordeaux);
+@media (max-width: 460px) {
+    .gb-ai-popup__pills {
+        grid-template-columns: 1fr;
+    }
+
+    .gb-ai-pill {
+        justify-content: flex-start;
+    }
+
+    .gb-ai-pill__arrow {
+        display: block;
+        width: 16px;
+        height: 16px;
+        margin-left: auto;
+        color: var(--muted-2);
+    }
 }
 
 @media (prefers-reduced-motion: reduce) {
