@@ -1,6 +1,6 @@
 # Gabbani Tech Website
 
-Static website for [gabbanitech.com](https://gabbanitech.com).
+Static website for [gabbani.tech](https://gabbani.tech).
 
 ## Languages
 
@@ -34,8 +34,8 @@ npx serve .
 
 Deployed to Cloudflare Pages via GitHub Actions:
 
-- Push to `develop` → DEV (`dev.gabbanitech.com`) + auto-creates a release PR to `main`
-- Merge to `main` → production (`gabbanitech.com`)
+- Push to `develop` → DEV (`dev.gabbani.tech`) + auto-creates a release PR to `main`
+- Merge to `main` → production (`gabbani.tech`)
 
 Requires repository secrets `CLOUDFLARE_API_TOKEN` and `CLOUDFLARE_ACCOUNT_ID`.
 
