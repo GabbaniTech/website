@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://gabbanitech.com/sitemap.xml
+Sitemap: https://gabbani.tech/sitemap.xml
