@@ -1,15 +1,15 @@
 name: Update visual baselines
 
-# Regenerate the Playwright screenshot baselines inside the same pinned container
-# the visual-regression gate compares against, then commit them back to the
-# branch. Use this after an intentional visual change when a local Docker run
-# (npm run e2e:docker:update) is not available.
+# Temporary helper: regenerate the Playwright screenshot baselines inside the
+# same pinned container the visual-regression gate uses, and publish them as an
+# artifact to download and commit. Removed once the rebuild's baselines land.
 
 on:
-    workflow_dispatch:
+    push:
+        branches: [feat/brand-rebuild]
 
 permissions:
-    contents: write
+    contents: read
 
 jobs:
     update:
@@ -19,8 +19,6 @@ jobs:
             image: mcr.microsoft.com/playwright:v1.61.1-noble
         steps:
             - uses: actions/checkout@v4
-              with:
-                  ref: ${{ github.ref_name }}
 
             - name: Mark workspace safe for git
               run: git config --global --add safe.directory "$GITHUB_WORKSPACE"
@@ -31,14 +29,8 @@ jobs:
             - name: Regenerate screenshots
               run: npx playwright test --update-snapshots
 
-            - name: Commit and push baselines
-              run: |
-                  git config user.name "github-actions[bot]"
-                  git config user.email "github-actions[bot]@users.noreply.github.com"
-                  git add e2e/__screenshots__
-                  if git diff --cached --quiet; then
-                      echo "No baseline changes."
-                  else
-                      git commit -m "Regenerate visual baselines for the rebuild"
-                      git push origin "HEAD:${{ github.ref_name }}"
-                  fi
+            - name: Upload baselines
+              uses: actions/upload-artifact@v4
+              with:
+                  name: visual-baselines
+                  path: e2e/__screenshots__/
