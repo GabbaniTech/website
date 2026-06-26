@@ -30,14 +30,14 @@
                     <a href="/es/">Español</a>
                 </div>
             </div>
-            <button class="nav-toggle" aria-label="Menu">
+            <button class="nav-toggle" type="button" aria-label="Menu">
                 <span></span>
                 <span></span>
                 <span></span>
             </button>
         </header>
 
-        <div class="hero fade-in" style="min-height: 80vh">
+        <div class="hero fade-in error-page">
             <div class="headline">
                 <h1 class="slide-up">404</h1>
                 <p class="slide-up delay-300">Page not found.</p>
@@ -62,21 +62,6 @@
             </div>
         </footer>
 
-        <script>
-            document.querySelector('.nav-toggle').addEventListener('click', function () {
-                document.querySelector('header nav').classList.toggle('open');
-            });
-            document.querySelectorAll('.lang-switcher').forEach(function (el) {
-                el.addEventListener('click', function (e) {
-                    e.stopPropagation();
-                    el.classList.toggle('open');
-                });
-            });
-            document.addEventListener('click', function () {
-                document.querySelectorAll('.lang-switcher').forEach(function (el) {
-                    el.classList.remove('open');
-                });
-            });
-        </script>
+        <script src="/assets/ui.js"></script>
     </body>
 </html>

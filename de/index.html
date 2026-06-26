@@ -57,7 +57,7 @@
                     <a href="/es/">Español</a>
                 </div>
             </div>
-            <button class="nav-toggle" aria-label="Menu">
+            <button class="nav-toggle" type="button" aria-label="Menu">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -208,26 +208,6 @@
             </div>
         </footer>
 
-        <script>
-            document.querySelector('.nav-toggle').addEventListener('click', function () {
-                document.querySelector('header nav').classList.toggle('open');
-            });
-            document.querySelectorAll('.lang-switcher').forEach(function (el) {
-                el.addEventListener('click', function (e) {
-                    e.stopPropagation();
-                    el.classList.toggle('open');
-                });
-            });
-            document.addEventListener('click', function () {
-                document.querySelectorAll('.lang-switcher').forEach(function (el) {
-                    el.classList.remove('open');
-                });
-            });
-            document.querySelectorAll('.lang-dropdown a').forEach(function (a) {
-                a.addEventListener('click', function () {
-                    sessionStorage.setItem('lang-chosen', '1');
-                });
-            });
-        </script>
+        <script src="../assets/ui.js"></script>
     </body>
 </html>
