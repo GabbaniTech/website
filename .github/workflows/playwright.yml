@@ -9,22 +9,22 @@ jobs:
     visual:
         name: Screenshots
         runs-on: ubuntu-latest
-        env:
-            # Single source for the Playwright version; the guard step below fails
-            # the build if package.json's pin drifts from it. Keep the container
-            # image tag and this value in lockstep when bumping Playwright.
-            PW_VERSION: '1.61.1'
         container:
             image: mcr.microsoft.com/playwright:v1.61.1-noble
         steps:
             - uses: actions/checkout@v4
 
-            - name: Guard — Playwright pin matches the container
+            # Enforce the determinism guarantee end to end: the @playwright/test pin
+            # must equal the container image tag declared above (read back from this
+            # file), so screenshots always render against the browsers the baselines
+            # were generated with. Bump both together, then regenerate baselines.
+            - name: Guard — Playwright pin matches the container image
               run: |
                   PKG=$(node -p "require('./package.json').devDependencies['@playwright/test']")
-                  echo "package.json @playwright/test=$PKG, container=$PW_VERSION"
-                  if [ "$PKG" != "$PW_VERSION" ]; then
-                      echo "::error::@playwright/test ($PKG) != container image ($PW_VERSION). Bump package.json and the playwright.yml image tag together, then regenerate baselines."
+                  IMG=$(grep -oE 'mcr\.microsoft\.com/playwright:v[0-9.]+' .github/workflows/playwright.yml | grep -oE '[0-9]+\.[0-9]+\.[0-9]+' | head -1)
+                  echo "package.json @playwright/test=$PKG, workflow image tag=$IMG"
+                  if [ "$PKG" != "$IMG" ]; then
+                      echo "::error::@playwright/test ($PKG) != Playwright image tag ($IMG). Bump package.json and the playwright.yml image tag together, then regenerate baselines."
                       exit 1
                   fi
 
