@@ -6,8 +6,8 @@ on:
         branches: [develop, main]
 
 jobs:
-    prettier:
-        name: Prettier
+    quality:
+        name: Quality
         runs-on: ubuntu-latest
         steps:
             - uses: actions/checkout@v4
@@ -19,4 +19,14 @@ jobs:
                   cache: npm
 
             - run: npm ci
-            - run: npm run format:check
+
+            # Formatting, HTML validity, structural completeness gate, and 100%
+            # unit-test coverage of the shipped browser JS. Any failure fails the PR.
+            - name: Format check
+              run: npm run format:check
+            - name: HTML validation
+              run: npm run validate:html
+            - name: Site completeness gate
+              run: npm run check:site
+            - name: Unit tests + 100% coverage
+              run: npm run test:coverage

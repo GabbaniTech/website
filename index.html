@@ -26,17 +26,7 @@
         <link rel="alternate" hreflang="x-default" href="https://gabbani.tech/" />
         <link rel="stylesheet" type="text/css" href="style.css" />
         <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
-        <script>
-            (function () {
-                if (sessionStorage.getItem('lang-chosen')) return;
-                var lang = (navigator.language || '').toLowerCase().slice(0, 2);
-                var supported = { de: '/de/', fr: '/fr/', it: '/it/', es: '/es/' };
-                if (supported[lang]) {
-                    sessionStorage.setItem('lang-chosen', lang);
-                    window.location.replace(supported[lang]);
-                }
-            })();
-        </script>
+        <script src="assets/lang.js"></script>
     </head>
 
     <body>
@@ -60,7 +50,7 @@
                     <a href="/es/">Español</a>
                 </div>
             </div>
-            <button class="nav-toggle" aria-label="Menu">
+            <button class="nav-toggle" type="button" aria-label="Menu">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -199,26 +189,6 @@
             </div>
         </footer>
 
-        <script>
-            document.querySelector('.nav-toggle').addEventListener('click', function () {
-                document.querySelector('header nav').classList.toggle('open');
-            });
-            document.querySelectorAll('.lang-switcher').forEach(function (el) {
-                el.addEventListener('click', function (e) {
-                    e.stopPropagation();
-                    el.classList.toggle('open');
-                });
-            });
-            document.addEventListener('click', function () {
-                document.querySelectorAll('.lang-switcher').forEach(function (el) {
-                    el.classList.remove('open');
-                });
-            });
-            document.querySelectorAll('.lang-dropdown a').forEach(function (a) {
-                a.addEventListener('click', function () {
-                    sessionStorage.setItem('lang-chosen', '1');
-                });
-            });
-        </script>
+        <script src="assets/ui.js"></script>
     </body>
 </html>
