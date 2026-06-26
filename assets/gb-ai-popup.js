@@ -2,6 +2,7 @@
 (function () {
     'use strict';
     var SUPPORTED = ['de', 'en', 'fr', 'it', 'es'];
+    var launchEl = null;
 
     function getLang() {
         var l = (document.documentElement.lang || 'en').slice(0, 2);
@@ -106,6 +107,7 @@
             pills +
             '</div>';
         document.body.appendChild(p);
+        if (launchEl) launchEl.setAttribute('hidden', '');
         requestAnimationFrame(function () {
             requestAnimationFrame(function () {
                 p.classList.add('is-visible');
@@ -118,12 +120,28 @@
                 if (p.parentNode) p.remove();
             }, 400);
             document.removeEventListener('keydown', onKey);
+            if (launchEl) launchEl.removeAttribute('hidden');
         }
         function onKey(e) {
             if (e.key === 'Escape') close();
         }
         p.querySelector('.gb-ai-popup__close').addEventListener('click', close);
         document.addEventListener('keydown', onKey);
+    }
+
+    var SPARK =
+        '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l1.5 4.9L18.5 8l-5 1.1L12 14l-1.5-4.9L5.5 8l5-1.1L12 2zm6.5 9l.9 2.7 2.6.8-2.6.9-.9 2.6-.9-2.6-2.6-.9 2.6-.8.9-2.7zM5.5 12l.8 2.3 2.2.7-2.2.8-.8 2.2-.8-2.2L2.5 15l2.2-.7.8-2.3z"/></svg>';
+
+    function buildLauncher(lang) {
+        var t = T[lang] || T.en;
+        var b = document.createElement('button');
+        b.className = 'gb-ai-launch';
+        b.type = 'button';
+        b.setAttribute('aria-label', t.title);
+        b.innerHTML = SPARK + '<span>' + t.eyebrow + '</span>';
+        b.addEventListener('click', show);
+        document.body.appendChild(b);
+        return b;
     }
 
     var KEY = 'gb-ai-popup-seen';
@@ -135,12 +153,13 @@
         }
     }
     document.addEventListener('DOMContentLoaded', function () {
+        launchEl = buildLauncher(getLang());
         if (seen()) return;
         setTimeout(function () {
             try {
                 sessionStorage.setItem(KEY, '1');
             } catch (e) {}
-            show();
+            if (!document.querySelector('.gb-ai-popup')) show();
         }, 5000);
     });
 })();

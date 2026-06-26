@@ -1777,9 +1777,52 @@ h4 {
     }
 }
 
+.gb-ai-launch {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 299;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 11px 17px 11px 14px;
+    border: none;
+    border-radius: 999px;
+    background: var(--bordeaux);
+    color: #fff;
+    font-family: var(--sans);
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    cursor: pointer;
+    box-shadow: 0 12px 30px -10px rgba(145, 18, 21, 0.6);
+    transition:
+        background 0.2s var(--ease),
+        transform 0.2s var(--ease);
+}
+
+.gb-ai-launch:hover {
+    background: var(--bordeaux-deep);
+    transform: translateY(-2px);
+}
+
+.gb-ai-launch svg {
+    width: 18px;
+    height: 18px;
+}
+
+.gb-ai-launch[hidden] {
+    display: none;
+}
+
 @media (prefers-reduced-motion: reduce) {
     .gb-ai-popup {
         transition: opacity 0.2s;
+    }
+
+    .gb-ai-launch {
+        transition: none;
     }
 }
 
