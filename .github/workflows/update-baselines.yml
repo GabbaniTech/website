@@ -1,0 +1,21 @@
+name: Update visual baselines
+on:
+    push:
+        branches: [feat/brand-rebuild]
+permissions:
+    contents: read
+jobs:
+    update:
+        name: Regenerate baselines
+        runs-on: ubuntu-latest
+        container:
+            image: mcr.microsoft.com/playwright:v1.61.1-noble
+        steps:
+            - uses: actions/checkout@v4
+            - run: git config --global --add safe.directory "$GITHUB_WORKSPACE"
+            - run: npm ci --no-audit --no-fund || npm ci --no-audit --no-fund
+            - run: npx playwright test --update-snapshots
+            - uses: actions/upload-artifact@v4
+              with:
+                  name: visual-baselines
+                  path: e2e/__screenshots__/

@@ -628,8 +628,8 @@
                                     <span>Terraza del sábado</span>
                                     <span>Cuadrante generado automáticamente</span>
                                 </div>
-                                <div class="weather">
-                                    <div class="weather__chip weather__chip--on">
+                                <div class="weather" data-weather-toggle>
+                                    <button type="button" class="weather__chip" data-weather="sun" aria-pressed="true">
                                         <svg width="26" height="26" viewBox="0 0 24 24" fill="none">
                                             <circle cx="12" cy="12" r="4.5" stroke="currentColor" stroke-width="1.7" />
                                             <path
@@ -641,8 +641,13 @@
                                         </svg>
                                         <strong>Soleado · 27°</strong>
                                         <span>Terraza llena prevista</span>
-                                    </div>
-                                    <div class="weather__chip">
+                                    </button>
+                                    <button
+                                        type="button"
+                                        class="weather__chip"
+                                        data-weather="rain"
+                                        aria-pressed="false"
+                                    >
                                         <svg width="26" height="26" viewBox="0 0 24 24" fill="none">
                                             <path
                                                 d="M7 16a4 4 0 010-8 5 5 0 019.6 1.5A3.5 3.5 0 0117 16H7z"
@@ -659,23 +664,32 @@
                                         </svg>
                                         <strong>Lluvia · 14°</strong>
                                         <span>Solo interior</span>
-                                    </div>
+                                    </button>
                                 </div>
                                 <div class="roster">
-                                    <div class="roster__row">
+                                    <div class="roster__row" data-sun="6" data-rain="1" data-max="6">
                                         <b>Terraza</b>
                                         <span class="roster__bar" style="width: 92%"></span>
-                                        <span class="roster__count">6 personas</span>
+                                        <span class="roster__count">
+                                            <strong>6</strong>
+                                            personas
+                                        </span>
                                     </div>
-                                    <div class="roster__row">
+                                    <div class="roster__row" data-sun="4" data-rain="3" data-max="5">
                                         <b>Bar</b>
                                         <span class="roster__bar" style="width: 64%"></span>
-                                        <span class="roster__count">4 personas</span>
+                                        <span class="roster__count">
+                                            <strong>4</strong>
+                                            personas
+                                        </span>
                                     </div>
-                                    <div class="roster__row">
+                                    <div class="roster__row" data-sun="5" data-rain="3" data-max="6">
                                         <b>Cocina</b>
                                         <span class="roster__bar" style="width: 78%"></span>
-                                        <span class="roster__count">5 personas</span>
+                                        <span class="roster__count">
+                                            <strong>5</strong>
+                                            personas
+                                        </span>
                                     </div>
                                 </div>
                             </div>

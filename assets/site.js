@@ -133,9 +133,10 @@
                 totalSun += parseInt(row.dataset.sun, 10);
                 total += n;
                 var bar = row.querySelector('.roster__bar');
-                var count = row.querySelector('.roster__count');
+                var count = row.querySelector('.roster__count strong');
                 if (bar) bar.style.width = Math.round((n / max) * 100) + '%';
-                if (count) count.innerHTML = '<strong>' + n + '</strong> staff';
+                // Update only the number so the translated unit label is kept.
+                if (count) count.textContent = n;
             });
             if (capFill && capVal) {
                 var pct = totalSun ? Math.round((total / totalSun) * 100) : 100;
