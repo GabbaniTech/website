@@ -47,12 +47,228 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://gabbani.tech/"/>
   </url>
   <url>
-    <loc>https://gabbani.tech/legal.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gabbani.tech/legal.html"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://gabbani.tech/de/legal.html"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://gabbani.tech/fr/legal.html"/>
-    <xhtml:link rel="alternate" hreflang="it" href="https://gabbani.tech/it/legal.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://gabbani.tech/es/legal.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://gabbani.tech/legal.html"/>
+    <loc>https://gabbani.tech/platform.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gabbani.tech/platform.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://gabbani.tech/de/platform.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://gabbani.tech/fr/platform.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://gabbani.tech/it/platform.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gabbani.tech/es/platform.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gabbani.tech/platform.html"/>
+  </url>
+  <url>
+    <loc>https://gabbani.tech/de/platform.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gabbani.tech/platform.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://gabbani.tech/de/platform.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://gabbani.tech/fr/platform.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://gabbani.tech/it/platform.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gabbani.tech/es/platform.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gabbani.tech/platform.html"/>
+  </url>
+  <url>
+    <loc>https://gabbani.tech/fr/platform.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gabbani.tech/platform.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://gabbani.tech/de/platform.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://gabbani.tech/fr/platform.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://gabbani.tech/it/platform.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gabbani.tech/es/platform.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gabbani.tech/platform.html"/>
+  </url>
+  <url>
+    <loc>https://gabbani.tech/it/platform.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gabbani.tech/platform.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://gabbani.tech/de/platform.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://gabbani.tech/fr/platform.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://gabbani.tech/it/platform.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gabbani.tech/es/platform.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gabbani.tech/platform.html"/>
+  </url>
+  <url>
+    <loc>https://gabbani.tech/es/platform.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gabbani.tech/platform.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://gabbani.tech/de/platform.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://gabbani.tech/fr/platform.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://gabbani.tech/it/platform.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gabbani.tech/es/platform.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gabbani.tech/platform.html"/>
+  </url>
+  <url>
+    <loc>https://gabbani.tech/staffing.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gabbani.tech/staffing.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://gabbani.tech/de/staffing.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://gabbani.tech/fr/staffing.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://gabbani.tech/it/staffing.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gabbani.tech/es/staffing.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gabbani.tech/staffing.html"/>
+  </url>
+  <url>
+    <loc>https://gabbani.tech/de/staffing.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gabbani.tech/staffing.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://gabbani.tech/de/staffing.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://gabbani.tech/fr/staffing.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://gabbani.tech/it/staffing.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gabbani.tech/es/staffing.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gabbani.tech/staffing.html"/>
+  </url>
+  <url>
+    <loc>https://gabbani.tech/fr/staffing.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gabbani.tech/staffing.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://gabbani.tech/de/staffing.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://gabbani.tech/fr/staffing.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://gabbani.tech/it/staffing.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gabbani.tech/es/staffing.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gabbani.tech/staffing.html"/>
+  </url>
+  <url>
+    <loc>https://gabbani.tech/it/staffing.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gabbani.tech/staffing.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://gabbani.tech/de/staffing.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://gabbani.tech/fr/staffing.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://gabbani.tech/it/staffing.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gabbani.tech/es/staffing.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gabbani.tech/staffing.html"/>
+  </url>
+  <url>
+    <loc>https://gabbani.tech/es/staffing.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gabbani.tech/staffing.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://gabbani.tech/de/staffing.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://gabbani.tech/fr/staffing.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://gabbani.tech/it/staffing.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gabbani.tech/es/staffing.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gabbani.tech/staffing.html"/>
+  </url>
+  <url>
+    <loc>https://gabbani.tech/payments.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gabbani.tech/payments.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://gabbani.tech/de/payments.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://gabbani.tech/fr/payments.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://gabbani.tech/it/payments.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gabbani.tech/es/payments.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gabbani.tech/payments.html"/>
+  </url>
+  <url>
+    <loc>https://gabbani.tech/de/payments.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gabbani.tech/payments.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://gabbani.tech/de/payments.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://gabbani.tech/fr/payments.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://gabbani.tech/it/payments.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gabbani.tech/es/payments.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gabbani.tech/payments.html"/>
+  </url>
+  <url>
+    <loc>https://gabbani.tech/fr/payments.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gabbani.tech/payments.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://gabbani.tech/de/payments.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://gabbani.tech/fr/payments.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://gabbani.tech/it/payments.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gabbani.tech/es/payments.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gabbani.tech/payments.html"/>
+  </url>
+  <url>
+    <loc>https://gabbani.tech/it/payments.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gabbani.tech/payments.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://gabbani.tech/de/payments.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://gabbani.tech/fr/payments.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://gabbani.tech/it/payments.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gabbani.tech/es/payments.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gabbani.tech/payments.html"/>
+  </url>
+  <url>
+    <loc>https://gabbani.tech/es/payments.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gabbani.tech/payments.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://gabbani.tech/de/payments.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://gabbani.tech/fr/payments.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://gabbani.tech/it/payments.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gabbani.tech/es/payments.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gabbani.tech/payments.html"/>
+  </url>
+  <url>
+    <loc>https://gabbani.tech/about.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gabbani.tech/about.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://gabbani.tech/de/about.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://gabbani.tech/fr/about.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://gabbani.tech/it/about.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gabbani.tech/es/about.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gabbani.tech/about.html"/>
+  </url>
+  <url>
+    <loc>https://gabbani.tech/de/about.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gabbani.tech/about.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://gabbani.tech/de/about.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://gabbani.tech/fr/about.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://gabbani.tech/it/about.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gabbani.tech/es/about.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gabbani.tech/about.html"/>
+  </url>
+  <url>
+    <loc>https://gabbani.tech/fr/about.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gabbani.tech/about.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://gabbani.tech/de/about.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://gabbani.tech/fr/about.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://gabbani.tech/it/about.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gabbani.tech/es/about.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gabbani.tech/about.html"/>
+  </url>
+  <url>
+    <loc>https://gabbani.tech/it/about.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gabbani.tech/about.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://gabbani.tech/de/about.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://gabbani.tech/fr/about.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://gabbani.tech/it/about.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gabbani.tech/es/about.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gabbani.tech/about.html"/>
+  </url>
+  <url>
+    <loc>https://gabbani.tech/es/about.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gabbani.tech/about.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://gabbani.tech/de/about.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://gabbani.tech/fr/about.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://gabbani.tech/it/about.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gabbani.tech/es/about.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gabbani.tech/about.html"/>
+  </url>
+  <url>
+    <loc>https://gabbani.tech/contact.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gabbani.tech/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://gabbani.tech/de/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://gabbani.tech/fr/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://gabbani.tech/it/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gabbani.tech/es/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gabbani.tech/contact.html"/>
+  </url>
+  <url>
+    <loc>https://gabbani.tech/de/contact.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gabbani.tech/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://gabbani.tech/de/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://gabbani.tech/fr/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://gabbani.tech/it/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gabbani.tech/es/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gabbani.tech/contact.html"/>
+  </url>
+  <url>
+    <loc>https://gabbani.tech/fr/contact.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gabbani.tech/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://gabbani.tech/de/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://gabbani.tech/fr/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://gabbani.tech/it/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gabbani.tech/es/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gabbani.tech/contact.html"/>
+  </url>
+  <url>
+    <loc>https://gabbani.tech/it/contact.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gabbani.tech/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://gabbani.tech/de/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://gabbani.tech/fr/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://gabbani.tech/it/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gabbani.tech/es/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gabbani.tech/contact.html"/>
+  </url>
+  <url>
+    <loc>https://gabbani.tech/es/contact.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gabbani.tech/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://gabbani.tech/de/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://gabbani.tech/fr/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://gabbani.tech/it/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://gabbani.tech/es/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gabbani.tech/contact.html"/>
   </url>
 </urlset>

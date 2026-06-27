@@ -1,0 +1,566 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Caja en tiempo real · Gabbani Tech</title>
+        <meta
+            name="description"
+            content="Cada venta pagada llega al panel de gestión en el instante en que ocurre: producto, peso exacto, importe y caja. La plataforma de caja en tiempo real de Gabbani Tech, Lugano."
+        />
+        <meta property="og:title" content="Caja en tiempo real · Gabbani Tech" />
+        <meta
+            property="og:description"
+            content="De la balanza a la dirección en un segundo. Mira cada venta en el momento en que se paga."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://gabbani.tech/es/platform.html" />
+        <meta property="og:image" content="https://gabbani.tech/assets/og-image.png" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:image" content="https://gabbani.tech/assets/og-image.png" />
+        <link rel="alternate" hreflang="en" href="https://gabbani.tech/platform.html" />
+        <link rel="alternate" hreflang="de" href="https://gabbani.tech/de/platform.html" />
+        <link rel="alternate" hreflang="fr" href="https://gabbani.tech/fr/platform.html" />
+        <link rel="alternate" hreflang="it" href="https://gabbani.tech/it/platform.html" />
+        <link rel="alternate" hreflang="es" href="https://gabbani.tech/es/platform.html" />
+        <link rel="alternate" hreflang="x-default" href="https://gabbani.tech/platform.html" />
+        <link rel="canonical" href="https://gabbani.tech/es/platform.html" />
+        <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="../style.css" />
+        <link rel="alternate" type="text/plain" href="https://gabbani.tech/llms.txt" title="LLM-readable profile" />
+        <link
+            rel="alternate"
+            type="application/json"
+            href="https://gabbani.tech/ai-index.json"
+            title="AI-readable site index"
+        />
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@graph": [
+                    {
+                        "@type": "Organization",
+                        "@id": "https://gabbani.tech/#org",
+                        "name": "Gabbani Tech",
+                        "url": "https://gabbani.tech/",
+                        "email": "hello@gabbani.tech",
+                        "slogan": "Real-time retail technology from Lugano",
+                        "address": {
+                            "@type": "PostalAddress",
+                            "addressLocality": "Lugano",
+                            "addressRegion": "Ticino",
+                            "addressCountry": "CH"
+                        },
+                        "areaServed": "Lugano",
+                        "sameAs": ["https://github.com/GabbaniTech"]
+                    },
+                    {
+                        "@type": "WebSite",
+                        "@id": "https://gabbani.tech/#website",
+                        "url": "https://gabbani.tech/",
+                        "name": "Gabbani Tech",
+                        "publisher": { "@id": "https://gabbani.tech/#org" },
+                        "inLanguage": ["en", "de", "fr", "it", "es"]
+                    }
+                ]
+            }
+        </script>
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "Service",
+                "name": "Real-time checkout",
+                "serviceType": "Real-time point-of-sale monitoring",
+                "provider": { "@id": "https://gabbani.tech/#org" },
+                "areaServed": "Lugano, Switzerland",
+                "url": "https://gabbani.tech/platform.html",
+                "description": "Every paid sale reaches the management dashboard the instant it happens, with product name, exact weight, amount, till and branch."
+            }
+        </script>
+    </head>
+
+    <body>
+        <header class="site-header" id="header">
+            <div class="wrap">
+                <a href="/es/" class="brand" aria-label="Gabbani Tech home">
+                    <svg class="brand__mark" viewBox="0 0 100 100" aria-hidden="true">
+                        <g
+                            transform="translate(50 47) scale(0.6) translate(-36 -52)"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="14"
+                        >
+                            <path d="M50 12 L34 12 A22 22 0 0 0 12 34 L12 70 A22 22 0 0 0 34 92 L50 92" />
+                            <path d="M50 92 L60 92 L60 53 L41 53" />
+                        </g>
+                        <rect x="28" y="79" width="44" height="10" rx="2" fill="currentColor" />
+                    </svg>
+                    <span class="brand__type">
+                        <span class="brand__name">Gabbani</span>
+                        <span class="brand__sub">Tech · Lugano</span>
+                    </span>
+                </a>
+                <nav class="primary-nav" aria-label="Primary">
+                    <a href="/es/platform.html" aria-current="page">Plataforma</a>
+                    <a href="/es/staffing.html">Personal</a>
+                    <a href="/es/payments.html">Pagos</a>
+                    <a href="/es/about.html">Nosotros</a>
+                    <a href="/es/contact.html">Contacto</a>
+                </nav>
+                <div class="header-tools">
+                    <div class="lang" id="lang">
+                        <button type="button" class="lang__current" aria-haspopup="true" aria-expanded="false">
+                            ES
+                        </button>
+                        <div class="lang__menu lang-dropdown" role="menu">
+                            <a href="/platform.html">
+                                English
+                                <span>EN</span>
+                            </a>
+                            <a href="/de/platform.html">
+                                Deutsch
+                                <span>DE</span>
+                            </a>
+                            <a href="/fr/platform.html">
+                                Français
+                                <span>FR</span>
+                            </a>
+                            <a href="/it/platform.html">
+                                Italiano
+                                <span>IT</span>
+                            </a>
+                            <a href="/es/platform.html" aria-current="true">
+                                Español
+                                <span>ES</span>
+                            </a>
+                        </div>
+                    </div>
+                    <a href="/es/contact.html" class="btn btn--primary header-cta">Reserva una demo</a>
+                    <button type="button" class="nav-toggle" id="navToggle" aria-label="Menú" aria-expanded="false">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <!-- Hero -->
+            <section class="hero">
+                <div class="wrap">
+                    <div class="hero__copy reveal in">
+                        <span class="eyebrow">Caja en tiempo real</span>
+                        <h1>
+                            El mostrador,
+                            <em>en vivo</em>
+                        </h1>
+                        <p class="lead">
+                            Un cliente compra salchicha en el mostrador. Se pesa, se paga, y esa venta exacta, hasta el
+                            gramo, aparece en el panel de gestión antes de que termine de imprimirse el recibo.
+                        </p>
+                        <div class="hero__cta">
+                            <a href="/es/contact.html" class="btn btn--primary btn--lg">Reserva una demo</a>
+                            <a href="#flow" class="btn btn--ghost btn--lg">Ver el flujo</a>
+                        </div>
+                    </div>
+                    <div class="hero__media reveal in d1">
+                        <div class="diagram" data-ticker>
+                            <div class="diagram__cap">
+                                <span>Panel de gestión</span>
+                                <span class="live">
+                                    <span class="live-dot"></span>
+                                    En vivo
+                                </span>
+                            </div>
+                            <div class="ticker">
+                                <div class="ticker__head">
+                                    <span>Producto</span>
+                                    <span>Peso</span>
+                                    <span>Importe</span>
+                                    <span>Caja · Hora</span>
+                                </div>
+                                <div data-ticker-body>
+                                    <div class="ticker__row ticker__row--new">
+                                        <strong>Salchicha luganighe</strong>
+                                        <span class="g">320 g</span>
+                                        <span class="chf">CHF 8.40</span>
+                                        <span class="t">14:32 · Caja 2</span>
+                                    </div>
+                                    <div class="ticker__row">
+                                        <strong>Gruyère AOP</strong>
+                                        <span class="g">250 g</span>
+                                        <span class="chf">CHF 7.10</span>
+                                        <span class="t">14:31 · Caja 1</span>
+                                    </div>
+                                    <div class="ticker__row">
+                                        <strong>Jamón crudo</strong>
+                                        <span class="g">180 g</span>
+                                        <span class="chf">CHF 9.60</span>
+                                        <span class="t">14:30 · Caja 3</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Flow -->
+            <section class="section section--ink" id="flow">
+                <div class="wrap">
+                    <div class="section-head reveal">
+                        <span class="eyebrow">El flujo</span>
+                        <h2>De la balanza a la dirección</h2>
+                        <p class="lead">
+                            Cuatro momentos, un segundo. Sin exportación al cierre del día, sin recuento manual. La
+                            venta cuenta la historia por sí sola.
+                        </p>
+                    </div>
+                    <div class="feature" style="margin-top: 52px; align-items: start">
+                        <div class="feature__media reveal">
+                            <div class="diagram">
+                                <div class="diagram__cap">
+                                    <span>Flujo de caja</span>
+                                    <span>Mostrador → panel</span>
+                                </div>
+                                <div class="flow">
+                                    <div class="node">
+                                        <span class="node__ico">
+                                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+                                                <path
+                                                    d="M5 8h14l-1.2 9.5a2 2 0 01-2 1.5H8.2a2 2 0 01-2-1.5L5 8z"
+                                                    stroke="currentColor"
+                                                    stroke-width="1.7"
+                                                    stroke-linejoin="round"
+                                                />
+                                                <path d="M9 8a3 3 0 016 0" stroke="currentColor" stroke-width="1.7" />
+                                            </svg>
+                                        </span>
+                                        <span class="node__txt">
+                                            <strong>Pesado</strong>
+                                            <span>Salchicha luganighe en el mostrador</span>
+                                        </span>
+                                        <span class="node__val">320 g</span>
+                                    </div>
+                                    <div class="flow__connector">
+                                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                                            <path
+                                                d="M12 4v16M6 14l6 6 6-6"
+                                                stroke="currentColor"
+                                                stroke-width="2"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                            />
+                                        </svg>
+                                    </div>
+                                    <div class="node">
+                                        <span class="node__ico">
+                                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+                                                <rect
+                                                    x="3"
+                                                    y="6"
+                                                    width="18"
+                                                    height="12"
+                                                    rx="2"
+                                                    stroke="currentColor"
+                                                    stroke-width="1.7"
+                                                />
+                                                <path d="M3 10h18" stroke="currentColor" stroke-width="1.7" />
+                                            </svg>
+                                        </span>
+                                        <span class="node__txt">
+                                            <strong>Pagado</strong>
+                                            <span>Tarjeta, efectivo o cripto</span>
+                                        </span>
+                                        <span class="node__val">CHF 8.40</span>
+                                    </div>
+                                    <div class="flow__connector">
+                                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                                            <path
+                                                d="M12 4v16M6 14l6 6 6-6"
+                                                stroke="currentColor"
+                                                stroke-width="2"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                            />
+                                        </svg>
+                                    </div>
+                                    <div class="node">
+                                        <span class="node__ico">
+                                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+                                                <path
+                                                    d="M4 7c0-1 1-2 2-2h12c1 0 2 1 2 2"
+                                                    stroke="currentColor"
+                                                    stroke-width="1.7"
+                                                    stroke-linecap="round"
+                                                />
+                                                <path
+                                                    d="M3 9h18l-1 9a2 2 0 01-2 2H6a2 2 0 01-2-2L3 9z"
+                                                    stroke="currentColor"
+                                                    stroke-width="1.7"
+                                                    stroke-linejoin="round"
+                                                />
+                                            </svg>
+                                        </span>
+                                        <span class="node__txt">
+                                            <strong>Registrado</strong>
+                                            <span>Producto, peso, caja, sucursal</span>
+                                        </span>
+                                        <span class="node__val">&lt; 1s</span>
+                                    </div>
+                                    <div class="flow__connector">
+                                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                                            <path
+                                                d="M12 4v16M6 14l6 6 6-6"
+                                                stroke="currentColor"
+                                                stroke-width="2"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                            />
+                                        </svg>
+                                    </div>
+                                    <div class="node">
+                                        <span class="node__ico" style="background: var(--live)">
+                                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+                                                <rect
+                                                    x="3"
+                                                    y="4"
+                                                    width="18"
+                                                    height="14"
+                                                    rx="2"
+                                                    stroke="currentColor"
+                                                    stroke-width="1.7"
+                                                />
+                                                <path
+                                                    d="M7 14l3-3 2 2 5-5"
+                                                    stroke="currentColor"
+                                                    stroke-width="1.7"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                />
+                                            </svg>
+                                        </span>
+                                        <span class="node__txt">
+                                            <strong>En el panel</strong>
+                                            <span>La dirección lo ve al instante</span>
+                                        </span>
+                                        <span class="node__val" style="color: var(--live)">En vivo</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="feature__body reveal d1">
+                            <h2 style="font-size: clamp(24px, 3.4vw, 34px); text-transform: uppercase">
+                                Anatomía de una venta
+                            </h2>
+                            <p>Cada línea que llega al panel lleva la historia completa de la transacción:</p>
+                            <ul class="checks">
+                                <li>
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                        <path
+                                            d="M20 6L9 17l-5-5"
+                                            stroke="currentColor"
+                                            stroke-width="2.2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        />
+                                    </svg>
+                                    <span>
+                                        <strong>Nombre del producto</strong>
+                                        , exactamente lo que se vendió
+                                    </span>
+                                </li>
+                                <li>
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                        <path
+                                            d="M20 6L9 17l-5-5"
+                                            stroke="currentColor"
+                                            stroke-width="2.2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        />
+                                    </svg>
+                                    <span>
+                                        <strong>Peso exacto</strong>
+                                        , al gramo, directo de la balanza
+                                    </span>
+                                </li>
+                                <li>
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                        <path
+                                            d="M20 6L9 17l-5-5"
+                                            stroke="currentColor"
+                                            stroke-width="2.2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        />
+                                    </svg>
+                                    <span>
+                                        <strong>Importe</strong>
+                                        , lo que pagó el cliente
+                                    </span>
+                                </li>
+                                <li>
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                        <path
+                                            d="M20 6L9 17l-5-5"
+                                            stroke="currentColor"
+                                            stroke-width="2.2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        />
+                                    </svg>
+                                    <span>
+                                        <strong>Caja, sucursal y hora</strong>
+                                        , dónde y cuándo ocurrió
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Benefits -->
+            <section class="section">
+                <div class="wrap">
+                    <div class="section-head reveal">
+                        <span class="eyebrow">Por qué importa</span>
+                        <h2>Decisiones mientras el día sigue en marcha</h2>
+                    </div>
+                    <div class="grid grid--3" style="margin-top: 44px">
+                        <article class="card reveal">
+                            <h3>Detecta la avalancha</h3>
+                            <p>
+                                Ve formarse una cola en los números antes de que se forme en el mostrador, y mueve al
+                                personal a donde está el dinero.
+                            </p>
+                        </article>
+                        <article class="card reveal d1">
+                            <h3>Capta el bajón</h3>
+                            <p>
+                                Una caja que se queda en silencio, un producto que deja de venderse: lo notas hoy, no en
+                                el informe del mes que viene.
+                            </p>
+                        </article>
+                        <article class="card reveal d2">
+                            <h3>Confía en los números</h3>
+                            <p>
+                                El peso y el precio vienen directos de la balanza y la caja. Sin reintroducir datos, sin
+                                redondeos, sin conjeturas al cierre del día.
+                            </p>
+                        </article>
+                        <article class="card reveal">
+                            <h3>Una vista, cada sucursal</h3>
+                            <p>
+                                ¿Tienes varias tiendas? Míralas una al lado de la otra en un solo panel, cada caja en su
+                                propia línea.
+                            </p>
+                        </article>
+                        <article class="card reveal d1">
+                            <h3>Creado para el mostrador</h3>
+                            <p>
+                                Diseñado para el servicio de carnicería, charcutería y panadería donde el peso es el
+                                precio, no una herramienta genérica de comercio forzada a encajar.
+                            </p>
+                        </article>
+                        <article class="card reveal d2">
+                            <h3>Nada que reaprender</h3>
+                            <p>
+                                Tu equipo sigue usando la caja que conoce. La transmisión en vivo corre en silencio a su
+                                lado.
+                            </p>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CTA -->
+            <section class="section section--ink cta-band">
+                <div class="wrap reveal">
+                    <span class="eyebrow" style="justify-content: center">Caja en tiempo real</span>
+                    <h2 style="margin-top: 18px">Observa cómo una venta llega al panel</h2>
+                    <p class="lead">
+                        Reserva una demo de 30 minutos. Pesaremos, pagaremos y te mostraremos la línea aparecer en vivo,
+                        delante de ti.
+                    </p>
+                    <a href="/es/contact.html" class="btn btn--primary btn--lg">Reserva una demo</a>
+                </div>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <div class="wrap">
+                <div class="footer-top">
+                    <div class="footer-brand">
+                        <a href="/es/" class="brand" aria-label="Gabbani Tech home">
+                            <svg class="brand__mark" viewBox="0 0 100 100" aria-hidden="true">
+                                <g
+                                    transform="translate(50 47) scale(0.6) translate(-36 -52)"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="14"
+                                >
+                                    <path d="M50 12 L34 12 A22 22 0 0 0 12 34 L12 70 A22 22 0 0 0 34 92 L50 92" />
+                                    <path d="M50 92 L60 92 L60 53 L41 53" />
+                                </g>
+                                <rect x="28" y="79" width="44" height="10" rx="2" fill="currentColor" />
+                            </svg>
+                            <span class="brand__type">
+                                <span class="brand__name">Gabbani</span>
+                                <span class="brand__sub">Tech · Lugano</span>
+                            </span>
+                        </a>
+                        <p>
+                            Tecnología de comercio en tiempo real, nacida de una institución de Lugano que sirve a la
+                            ciudad desde 1937.
+                        </p>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Producto</h4>
+                        <a href="/es/platform.html">Caja en tiempo real</a>
+                        <a href="/es/staffing.html">Turnos según el tiempo</a>
+                        <a href="/es/payments.html">Pagos en cripto</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Empresa</h4>
+                        <a href="/es/about.html">Nosotros</a>
+                        <a href="/es/contact.html">Contacto</a>
+                        <a href="/es/legal.html">Aviso legal y privacidad</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Contacto</h4>
+                        <a href="mailto:hello@gabbani.tech">hello@gabbani.tech</a>
+                        <a href="/es/contact.html">Reserva una demo</a>
+                        <span class="footer-place" style="color: var(--on-night-muted); font-size: 14.5px">
+                            Lugano, Suiza
+                        </span>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>© 2026 Gabbani Tech, Lugano, Suiza</p>
+                    <div class="footer-social">
+                        <a href="https://github.com/GabbaniTech" aria-label="GitHub">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"
+                                />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="../assets/site.js"></script>
+        <script src="../assets/gb-ai-popup.js" defer></script>
+        <script src="../assets/sea-attribution.js" defer></script>
+    </body>
+</html>

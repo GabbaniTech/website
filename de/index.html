@@ -3,15 +3,15 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Gabbani Tech</title>
+        <title>Gabbani Tech · Echtzeit-Technologie für den Handel aus Lugano</title>
         <meta
             name="description"
-            content="Ein Softwareunternehmen, das zuverlässige digitale Produkte und Infrastruktur entwickelt."
+            content="Gabbani Tech macht aus der Ladenkasse einen Live-Feed. Sehen Sie jeden Verkauf in dem Moment, in dem er bezahlt wird, planen Sie das Personal nach dem Wetter und akzeptieren Sie Bitcoin, Tether und MyLuga in Lugano."
         />
-        <meta property="og:title" content="Gabbani Tech" />
+        <meta property="og:title" content="Gabbani Tech · Echtzeit-Technologie für den Handel" />
         <meta
             property="og:description"
-            content="Ein Softwareunternehmen, das zuverlässige digitale Produkte und Infrastruktur entwickelt."
+            content="Sehen Sie jeden Verkauf in dem Moment, in dem er passiert. Echtzeit-Kasse, wetterbasierte Personalplanung und Krypto-Zahlungen, gebaut in Lugano."
         />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://gabbani.tech/de/" />
@@ -21,10 +21,10 @@
         <meta property="og:image:alt" content="Gabbani Tech" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:image" content="https://gabbani.tech/assets/og-image.png" />
-        <meta name="twitter:title" content="Gabbani Tech" />
+        <meta name="twitter:title" content="Gabbani Tech · Echtzeit-Technologie für den Handel" />
         <meta
             name="twitter:description"
-            content="Ein Softwareunternehmen, das zuverlässige digitale Produkte und Infrastruktur entwickelt."
+            content="Sehen Sie jeden Verkauf in dem Moment, in dem er passiert. Echtzeit-Kasse, wetterbasierte Personalplanung und Krypto-Zahlungen, gebaut in Lugano."
         />
         <link rel="alternate" hreflang="en" href="https://gabbani.tech/" />
         <link rel="alternate" hreflang="de" href="https://gabbani.tech/de/" />
@@ -32,182 +32,938 @@
         <link rel="alternate" hreflang="it" href="https://gabbani.tech/it/" />
         <link rel="alternate" hreflang="es" href="https://gabbani.tech/es/" />
         <link rel="alternate" hreflang="x-default" href="https://gabbani.tech/" />
-        <link rel="stylesheet" type="text/css" href="../style.css" />
+        <link rel="canonical" href="https://gabbani.tech/de/" />
         <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="../style.css" />
+        <link rel="alternate" type="text/plain" href="https://gabbani.tech/llms.txt" title="LLM-readable profile" />
+        <link
+            rel="alternate"
+            type="application/json"
+            href="https://gabbani.tech/ai-index.json"
+            title="AI-readable site index"
+        />
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@graph": [
+                    {
+                        "@type": "Organization",
+                        "@id": "https://gabbani.tech/#org",
+                        "name": "Gabbani Tech",
+                        "url": "https://gabbani.tech/",
+                        "email": "hello@gabbani.tech",
+                        "slogan": "Real-time retail technology from Lugano",
+                        "address": {
+                            "@type": "PostalAddress",
+                            "addressLocality": "Lugano",
+                            "addressRegion": "Ticino",
+                            "addressCountry": "CH"
+                        },
+                        "areaServed": "Lugano",
+                        "sameAs": ["https://github.com/GabbaniTech"]
+                    },
+                    {
+                        "@type": "WebSite",
+                        "@id": "https://gabbani.tech/#website",
+                        "url": "https://gabbani.tech/",
+                        "name": "Gabbani Tech",
+                        "publisher": { "@id": "https://gabbani.tech/#org" },
+                        "inLanguage": ["en", "de", "fr", "it", "es"]
+                    }
+                ]
+            }
+        </script>
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "ItemList",
+                "name": "Gabbani Tech products",
+                "itemListElement": [
+                    {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "name": "Real-time checkout",
+                        "url": "https://gabbani.tech/platform.html"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "name": "Weather-smart staffing",
+                        "url": "https://gabbani.tech/staffing.html"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 3,
+                        "name": "Crypto payments",
+                        "url": "https://gabbani.tech/payments.html"
+                    }
+                ]
+            }
+        </script>
     </head>
 
     <body>
-        <header class="fade-in">
-            <a href="/de/" class="logo-link">
-                <span class="logo-text">Gabbani Tech</span>
-            </a>
-            <nav>
-                <a href="#about">Über uns</a>
-                <a href="#services">Leistungen</a>
-                <a href="#values">Werte</a>
-                <a href="#contact">Kontakt</a>
-            </nav>
-            <div class="lang-switcher">
-                <span class="lang-current">DE</span>
-                <div class="lang-dropdown">
-                    <a href="/">English</a>
-                    <a href="/de/" class="active">Deutsch</a>
-                    <a href="/fr/">Français</a>
-                    <a href="/it/">Italiano</a>
-                    <a href="/es/">Español</a>
+        <header class="site-header" id="header">
+            <div class="wrap">
+                <a href="/de/" class="brand" aria-label="Gabbani Tech Startseite">
+                    <svg class="brand__mark" viewBox="0 0 100 100" aria-hidden="true">
+                        <g
+                            transform="translate(50 47) scale(0.6) translate(-36 -52)"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="14"
+                        >
+                            <path d="M50 12 L34 12 A22 22 0 0 0 12 34 L12 70 A22 22 0 0 0 34 92 L50 92" />
+                            <path d="M50 92 L60 92 L60 53 L41 53" />
+                        </g>
+                        <rect x="28" y="79" width="44" height="10" rx="2" fill="currentColor" />
+                    </svg>
+                    <span class="brand__type">
+                        <span class="brand__name">Gabbani</span>
+                        <span class="brand__sub">Tech · Lugano</span>
+                    </span>
+                </a>
+                <nav class="primary-nav" aria-label="Primary">
+                    <a href="/de/platform.html">Plattform</a>
+                    <a href="/de/staffing.html">Personal</a>
+                    <a href="/de/payments.html">Zahlungen</a>
+                    <a href="/de/about.html">Über uns</a>
+                    <a href="/de/contact.html">Kontakt</a>
+                </nav>
+                <div class="header-tools">
+                    <div class="lang" id="lang">
+                        <button type="button" class="lang__current" aria-haspopup="true" aria-expanded="false">
+                            DE
+                        </button>
+                        <div class="lang__menu lang-dropdown" role="menu">
+                            <a href="/">
+                                English
+                                <span>EN</span>
+                            </a>
+                            <a href="/de/" aria-current="true">
+                                Deutsch
+                                <span>DE</span>
+                            </a>
+                            <a href="/fr/">
+                                Français
+                                <span>FR</span>
+                            </a>
+                            <a href="/it/">
+                                Italiano
+                                <span>IT</span>
+                            </a>
+                            <a href="/es/">
+                                Español
+                                <span>ES</span>
+                            </a>
+                        </div>
+                    </div>
+                    <a href="/de/contact.html" class="btn btn--primary header-cta">Demo buchen</a>
+                    <button type="button" class="nav-toggle" id="navToggle" aria-label="Menü" aria-expanded="false">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
                 </div>
             </div>
-            <button class="nav-toggle" type="button" aria-label="Menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
         </header>
 
-        <div class="hero fade-in">
-            <div class="glow"></div>
-            <div class="headline">
-                <h1 class="slide-up">
-                    Software, die
-                    <br />
-                    einfach funktioniert
-                </h1>
-                <p class="slide-up delay-300">
-                    Gabbani Tech entwickelt zuverlässige digitale Produkte und Infrastruktur für Unternehmen, die ihre
-                    Technologie ernst nehmen.
-                </p>
-                <a href="#contact" class="button slide-up delay-600">Kontakt aufnehmen</a>
-            </div>
-        </div>
-
         <main>
-            <section id="about">
-                <h1>Über uns</h1>
-                <h2>Ein kleines Team mit langfristigem Denken</h2>
-                <p>
-                    Gabbani Tech ist ein unabhängiges Softwareunternehmen. Wir konzipieren, entwickeln und betreiben
-                    Webanwendungen, Backends und die Infrastruktur, auf der sie laufen — von A bis Z.
-                </p>
-                <p>
-                    Wir arbeiten in kleinen, fokussierten Teams, liefern in kurzen Zyklen und begleiten unsere Kunden
-                    langfristig. Keine überdimensionierten Agenturen, kein Wegwerf-Code — nur Software, die wir gerne
-                    selbst pflegen.
-                </p>
-            </section>
+            <!-- ============ Hero ============ -->
+            <section class="hero">
+                <div class="wrap">
+                    <div class="hero__copy reveal in">
+                        <span class="eyebrow">Echtzeit-Handel · Lugano</span>
+                        <h1>
+                            Jeden Verkauf
+                            <em>sofort</em>
+                            im Blick
+                        </h1>
+                        <p class="lead">
+                            Gabbani Tech macht aus der Ladenkasse einen Live-Feed. Jeder Verkauf erreicht das
+                            Management-Dashboard in der Sekunde, in der er bezahlt wird, mit dem Produkt, dem genauen
+                            Gewicht und der Kasse.
+                        </p>
+                        <div class="hero__cta">
+                            <a href="/de/platform.html" class="btn btn--primary btn--lg">
+                                So funktioniert es
+                                <svg class="arrow" width="18" height="18" viewBox="0 0 24 24" fill="none">
+                                    <path
+                                        d="M5 12h14M13 6l6 6-6 6"
+                                        stroke="currentColor"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                </svg>
+                            </a>
+                            <a href="/de/contact.html" class="btn btn--ghost btn--lg">Demo buchen</a>
+                        </div>
+                        <dl class="hero__meta">
+                            <div>
+                                <dt>1937</dt>
+                                <dd>Lugano Tradition</dd>
+                            </div>
+                            <div>
+                                <dt>&lt; 1s</dt>
+                                <dd>Vom Verkauf ins Dashboard</dd>
+                            </div>
+                            <div>
+                                <dt>3</dt>
+                                <dd>Arten zu zahlen</dd>
+                            </div>
+                        </dl>
+                    </div>
 
-            <section id="services">
-                <h1>Leistungen</h1>
-                <h2>Was wir tun</h2>
-                <p>Vom ersten Prototyp bis zum System im Produktivbetrieb.</p>
-                <div class="service-grid">
-                    <div class="service-card">
-                        <h3>Produktentwicklung</h3>
-                        <span class="tag">Web &amp; Mobile</span>
-                        <p>
-                            Wir machen aus Ideen auslieferbare Produkte — Web-Apps, Mobile-Apps und die APIs dahinter,
-                            gebaut, um zu bleiben.
-                        </p>
-                    </div>
-                    <div class="service-card">
-                        <h3>Cloud &amp; Infrastruktur</h3>
-                        <span class="tag">DevOps</span>
-                        <p>
-                            Containerisierte Deployments, CI/CD-Pipelines und Observability — Infrastruktur, die
-                            reproduzierbar und im besten Sinne langweilig ist.
-                        </p>
-                    </div>
-                    <div class="service-card">
-                        <h3>Automatisierung &amp; KI</h3>
-                        <span class="tag">Integration</span>
-                        <p>
-                            Wir verbinden Ihre Tools und automatisieren die wiederkehrende Arbeit, inklusive
-                            pragmatischem Einsatz von KI dort, wo sie wirklich hilft.
-                        </p>
-                    </div>
-                    <div class="service-card">
-                        <h3>Technische Beratung</h3>
-                        <span class="tag">Strategie</span>
-                        <p>
-                            Architektur-Reviews, Technologieentscheidungen und eine verlässliche zweite Meinung, bevor
-                            Sie sich auf eine Richtung festlegen.
-                        </p>
-                    </div>
-                    <div class="service-card placeholder">
-                        <h3>Ihr Projekt</h3>
-                        <span class="tag">Reden wir</span>
-                        <p>
-                            Haben Sie etwas im Kopf, das in keine Schublade passt? Das ist meist die spannendste Arbeit.
-                        </p>
-                        <a href="#contact" class="card-link">Kontakt aufnehmen</a>
+                    <div class="hero__media reveal in d1">
+                        <div class="diagram" data-ticker>
+                            <div class="diagram__cap">
+                                <span>Management-Dashboard</span>
+                                <span class="live">
+                                    <span class="live-dot"></span>
+                                    Live
+                                </span>
+                            </div>
+                            <div class="ticker">
+                                <div class="ticker__head">
+                                    <span>Produkt</span>
+                                    <span>Gewicht</span>
+                                    <span>Betrag</span>
+                                    <span>Kasse · Zeit</span>
+                                </div>
+                                <div data-ticker-body>
+                                    <div class="ticker__row ticker__row--new">
+                                        <strong>Luganighe Wurst</strong>
+                                        <span class="g">320 g</span>
+                                        <span class="chf">CHF 8.40</span>
+                                        <span class="t">14:32 · Kasse 2</span>
+                                    </div>
+                                    <div class="ticker__row">
+                                        <strong>Gruyère AOP</strong>
+                                        <span class="g">250 g</span>
+                                        <span class="chf">CHF 7.10</span>
+                                        <span class="t">14:31 · Kasse 1</span>
+                                    </div>
+                                    <div class="ticker__row">
+                                        <strong>Rohschinken</strong>
+                                        <span class="g">180 g</span>
+                                        <span class="chf">CHF 9.60</span>
+                                        <span class="t">14:30 · Kasse 3</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
 
-            <section id="values">
-                <h1>Werte</h1>
-                <h2>Wie wir arbeiten</h2>
-                <div class="values-list">
-                    <div class="value">
-                        <h3>Handwerk</h3>
-                        <p>Wir schreiben Code, auf den wir stolz sind und den wir auch in Jahren noch gerne pflegen.</p>
-                    </div>
-                    <div class="value">
-                        <h3>Transparenz</h3>
-                        <p>
-                            Klare Schätzungen, ehrliche Kompromisse und keine Überraschungen, die in einer Rechnung
-                            versteckt sind.
+            <!-- ============ Heritage band ============ -->
+            <section class="section--tight section--paper2">
+                <div class="wrap">
+                    <div class="center" style="max-width: 760px">
+                        <span class="eyebrow" style="justify-content: center">Geboren in Lugano</span>
+                        <p class="lead" style="margin-top: 18px">
+                            Der Name Gabbani steht seit 1937 für Lugano, mit Metzgerei, Feinkost, Wein und Gastlichkeit.
+                            Gabbani Tech trägt diese Hingabe für die Theke in Software, die für Betriebe gebaut ist, die
+                            davon leben.
                         </p>
                     </div>
-                    <div class="value">
-                        <h3>Verantwortung</h3>
-                        <p>
-                            Wir behandeln Ihre Systeme, als wären es unsere eigenen — denn in der Praxis betreiben wir
-                            sie.
-                        </p>
-                    </div>
-                    <div class="value">
-                        <h3>Sicherheit zuerst</h3>
-                        <p>
-                            Sinnvolle Voreinstellungen, minimale Rechtevergabe und keine Abkürzungen, wo Daten und
-                            Vertrauen im Spiel sind.
-                        </p>
+                    <div class="partners" style="margin-top: 36px">
+                        <span class="partner">Macelleria</span>
+                        <span class="partner">Enoteca</span>
+                        <span class="partner">Gastronomia</span>
+                        <span class="partner">Catering</span>
+                        <span class="partner">Gastlichkeit</span>
                     </div>
                 </div>
             </section>
 
-            <section id="contact">
-                <h1>Kontakt</h1>
-                <h2>Lassen Sie uns gemeinsam etwas aufbauen</h2>
-                <p>
-                    Erzählen Sie uns von Ihrem Projekt, Ihrem Stack oder dem Problem, an dem Sie feststecken. Wir lesen
-                    jede Nachricht und antworten persönlich.
-                </p>
-                <div class="contact-links">
-                    <a href="mailto:hello@gabbani.tech" class="button">Kontakt aufnehmen</a>
+            <!-- ============ Feature overview ============ -->
+            <section class="section">
+                <div class="wrap">
+                    <div class="section-head reveal">
+                        <span class="eyebrow">Was wir bauen</span>
+                        <h2>Ein System für die ganze Theke</h2>
+                        <p class="lead">
+                            Drei Werkzeuge, die dieselben Live-Daten teilen, damit Ladenfläche, Backoffice und Zahlung
+                            miteinander sprechen.
+                        </p>
+                    </div>
+
+                    <div class="grid grid--3" style="margin-top: 48px">
+                        <article class="card reveal">
+                            <span class="card__num">01</span>
+                            <div class="card__icon" style="margin-top: 16px">
+                                <svg width="26" height="26" viewBox="0 0 24 24" fill="none">
+                                    <path
+                                        d="M3 7l9-4 9 4-9 4-9-4z"
+                                        stroke="currentColor"
+                                        stroke-width="1.8"
+                                        stroke-linejoin="round"
+                                    />
+                                    <path
+                                        d="M3 7v8l9 4 9-4V7"
+                                        stroke="currentColor"
+                                        stroke-width="1.8"
+                                        stroke-linejoin="round"
+                                    />
+                                </svg>
+                            </div>
+                            <h3>Echtzeit-Kasse</h3>
+                            <p>
+                                Jeder bezahlte Verkauf erscheint sofort im Management-Dashboard: Produkt, Gewicht,
+                                Betrag und Kasse, ohne Verzögerung bis zum Tagesabschluss.
+                            </p>
+                            <a href="/de/platform.html" class="textlink">
+                                Die Plattform entdecken
+                                <svg class="arrow" width="16" height="16" viewBox="0 0 24 24" fill="none">
+                                    <path
+                                        d="M5 12h14M13 6l6 6-6 6"
+                                        stroke="currentColor"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                </svg>
+                            </a>
+                        </article>
+
+                        <article class="card reveal d1">
+                            <span class="card__num">02</span>
+                            <div class="card__icon" style="margin-top: 16px">
+                                <svg width="26" height="26" viewBox="0 0 24 24" fill="none">
+                                    <circle cx="12" cy="9" r="4" stroke="currentColor" stroke-width="1.8" />
+                                    <path
+                                        d="M5 9H2m20 0h-3M12 2V1m6.4 2.6l-.7.7M6.3 4.3l-.7-.7M4 20c1.6-2.5 4.6-4 8-4s6.4 1.5 8 4"
+                                        stroke="currentColor"
+                                        stroke-width="1.8"
+                                        stroke-linecap="round"
+                                    />
+                                </svg>
+                            </div>
+                            <h3>Wetterbasierte Personalplanung</h3>
+                            <p>
+                                Das System liest die Vorhersage und entwirft Schichtpläne für Ihre Terrasse: mehr Hände
+                                an einem sonnigen Tag, weniger, wenn der Regen einsetzt.
+                            </p>
+                            <a href="/de/staffing.html" class="textlink">
+                                Personalplanung ansehen
+                                <svg class="arrow" width="16" height="16" viewBox="0 0 24 24" fill="none">
+                                    <path
+                                        d="M5 12h14M13 6l6 6-6 6"
+                                        stroke="currentColor"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                </svg>
+                            </a>
+                        </article>
+
+                        <article class="card reveal d2">
+                            <span class="card__num">03</span>
+                            <div class="card__icon" style="margin-top: 16px">
+                                <svg width="26" height="26" viewBox="0 0 24 24" fill="none">
+                                    <rect
+                                        x="2.5"
+                                        y="6"
+                                        width="19"
+                                        height="13"
+                                        rx="2.5"
+                                        stroke="currentColor"
+                                        stroke-width="1.8"
+                                    />
+                                    <path d="M2.5 10h19" stroke="currentColor" stroke-width="1.8" />
+                                    <circle cx="17" cy="14.5" r="1.5" fill="currentColor" />
+                                </svg>
+                            </div>
+                            <h3>Krypto-Zahlungen</h3>
+                            <p>
+                                Nehmen Sie Bitcoin, Tether und den MyLuga Token an der Kasse an, automatisch abgewickelt
+                                über Open CryptoPay, ein Produkt der DFX AG.
+                            </p>
+                            <a href="/de/payments.html" class="textlink">
+                                Zahlungen entdecken
+                                <svg class="arrow" width="16" height="16" viewBox="0 0 24 24" fill="none">
+                                    <path
+                                        d="M5 12h14M13 6l6 6-6 6"
+                                        stroke="currentColor"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                </svg>
+                            </a>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ============ Feature 1: Real-time checkout (ink) ============ -->
+            <section class="section section--ink">
+                <div class="wrap">
+                    <div class="feature">
+                        <div class="feature__body reveal">
+                            <span class="eyebrow">Echtzeit-Kasse</span>
+                            <h2>Von der Waage in die Chefetage in einer Sekunde</h2>
+                            <p>
+                                Ein Kunde kauft Wurst an der Theke. Sie wird gewogen, sie wird bezahlt, und genau dieser
+                                Verkauf, auf das Gramm genau, landet im Management-Dashboard, bevor der Kassenbon fertig
+                                gedruckt ist.
+                            </p>
+                            <ul class="checks">
+                                <li>
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                        <path
+                                            d="M20 6L9 17l-5-5"
+                                            stroke="currentColor"
+                                            stroke-width="2.2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        />
+                                    </svg>
+                                    Produktname und genaues Gewicht auf jeder Zeile
+                                </li>
+                                <li>
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                        <path
+                                            d="M20 6L9 17l-5-5"
+                                            stroke="currentColor"
+                                            stroke-width="2.2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        />
+                                    </svg>
+                                    Live-Summen pro Kasse, pro Filiale, pro Stunde
+                                </li>
+                                <li>
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                        <path
+                                            d="M20 6L9 17l-5-5"
+                                            stroke="currentColor"
+                                            stroke-width="2.2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        />
+                                    </svg>
+                                    Keine Tabellen, kein Warten auf den Tagesabschluss
+                                </li>
+                            </ul>
+                            <a href="/de/platform.html" class="btn btn--ghost">Die Plattform entdecken</a>
+                        </div>
+
+                        <div class="feature__media reveal d1">
+                            <div class="diagram">
+                                <div class="diagram__cap">
+                                    <span>Kassenablauf</span>
+                                    <span>Theke → Dashboard</span>
+                                </div>
+                                <div class="flow">
+                                    <div class="node">
+                                        <span class="node__ico">
+                                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+                                                <path
+                                                    d="M5 8h14l-1.2 9.5a2 2 0 01-2 1.5H8.2a2 2 0 01-2-1.5L5 8z"
+                                                    stroke="currentColor"
+                                                    stroke-width="1.7"
+                                                    stroke-linejoin="round"
+                                                />
+                                                <path d="M9 8a3 3 0 016 0" stroke="currentColor" stroke-width="1.7" />
+                                            </svg>
+                                        </span>
+                                        <span class="node__txt">
+                                            <strong>An der Theke gewogen</strong>
+                                            <span>Luganighe Wurst</span>
+                                        </span>
+                                        <span class="node__val">320 g</span>
+                                    </div>
+                                    <div class="flow__connector">
+                                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                                            <path
+                                                d="M12 4v16M6 14l6 6 6-6"
+                                                stroke="currentColor"
+                                                stroke-width="2"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                            />
+                                        </svg>
+                                    </div>
+                                    <div class="node">
+                                        <span class="node__ico">
+                                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+                                                <rect
+                                                    x="3"
+                                                    y="6"
+                                                    width="18"
+                                                    height="12"
+                                                    rx="2"
+                                                    stroke="currentColor"
+                                                    stroke-width="1.7"
+                                                />
+                                                <path d="M3 10h18" stroke="currentColor" stroke-width="1.7" />
+                                            </svg>
+                                        </span>
+                                        <span class="node__txt">
+                                            <strong>Bezahlt</strong>
+                                            <span>Karte · bar · Krypto</span>
+                                        </span>
+                                        <span class="node__val">CHF 8.40</span>
+                                    </div>
+                                    <div class="flow__connector">
+                                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                                            <path
+                                                d="M12 4v16M6 14l6 6 6-6"
+                                                stroke="currentColor"
+                                                stroke-width="2"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                            />
+                                        </svg>
+                                    </div>
+                                    <div class="node">
+                                        <span class="node__ico" style="background: var(--live)">
+                                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+                                                <rect
+                                                    x="3"
+                                                    y="4"
+                                                    width="18"
+                                                    height="14"
+                                                    rx="2"
+                                                    stroke="currentColor"
+                                                    stroke-width="1.7"
+                                                />
+                                                <path
+                                                    d="M7 14l3-3 2 2 5-5"
+                                                    stroke="currentColor"
+                                                    stroke-width="1.7"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                />
+                                            </svg>
+                                        </span>
+                                        <span class="node__txt">
+                                            <strong>Management-Dashboard</strong>
+                                            <span>Sofort aktualisiert</span>
+                                        </span>
+                                        <span class="node__val" style="color: var(--live)">Live</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ============ Feature 2: Staffing ============ -->
+            <section class="section">
+                <div class="wrap">
+                    <div class="feature feature--reverse">
+                        <div class="feature__body reveal">
+                            <span class="eyebrow">Wetterbasierte Personalplanung</span>
+                            <h2>Lassen Sie die Vorhersage den Dienstplan schreiben</h2>
+                            <p>
+                                Für Terrassen und Aussenservice ist das Wetter das Geschäft. Gabbani Tech liest die
+                                Vorhersage und schlägt automatisch einen Schichtplan vor, damit ein strahlender Samstag
+                                voll besetzt ist und ein verregneter Tag nie.
+                            </p>
+                            <ul class="checks">
+                                <li>
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                        <path
+                                            d="M20 6L9 17l-5-5"
+                                            stroke="currentColor"
+                                            stroke-width="2.2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        />
+                                    </svg>
+                                    Vorhersagebasierte Schichtvorschläge, Tage im Voraus
+                                </li>
+                                <li>
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                        <path
+                                            d="M20 6L9 17l-5-5"
+                                            stroke="currentColor"
+                                            stroke-width="2.2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        />
+                                    </svg>
+                                    Die richtige Anzahl Menschen für den erwarteten Andrang
+                                </li>
+                                <li>
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                        <path
+                                            d="M20 6L9 17l-5-5"
+                                            stroke="currentColor"
+                                            stroke-width="2.2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        />
+                                    </svg>
+                                    Sie geben frei. Der Plan ist ein Entwurf, nie ein Befehl
+                                </li>
+                            </ul>
+                            <a href="/de/staffing.html" class="textlink">
+                                So funktioniert die Personalplanung
+                                <svg class="arrow" width="16" height="16" viewBox="0 0 24 24" fill="none">
+                                    <path
+                                        d="M5 12h14M13 6l6 6-6 6"
+                                        stroke="currentColor"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                </svg>
+                            </a>
+                        </div>
+
+                        <div class="feature__media reveal d1">
+                            <div class="diagram">
+                                <div class="diagram__cap">
+                                    <span>Samstag Terrasse</span>
+                                    <span>Automatisch erstellter Dienstplan</span>
+                                </div>
+                                <div class="weather">
+                                    <div class="weather__chip weather__chip--on">
+                                        <svg width="26" height="26" viewBox="0 0 24 24" fill="none">
+                                            <circle cx="12" cy="12" r="4.5" stroke="currentColor" stroke-width="1.7" />
+                                            <path
+                                                d="M12 3v2m0 14v2M3 12h2m14 0h2M5.6 5.6l1.4 1.4m10 10l1.4 1.4m0-12.8l-1.4 1.4m-10 10l-1.4 1.4"
+                                                stroke="currentColor"
+                                                stroke-width="1.7"
+                                                stroke-linecap="round"
+                                            />
+                                        </svg>
+                                        <strong>Sonnig · 27°</strong>
+                                        <span>Volle Terrasse erwartet</span>
+                                    </div>
+                                    <div class="weather__chip">
+                                        <svg width="26" height="26" viewBox="0 0 24 24" fill="none">
+                                            <path
+                                                d="M7 16a4 4 0 010-8 5 5 0 019.6 1.5A3.5 3.5 0 0117 16H7z"
+                                                stroke="currentColor"
+                                                stroke-width="1.7"
+                                                stroke-linejoin="round"
+                                            />
+                                            <path
+                                                d="M9 19l-1 2m4-2l-1 2m4-2l-1 2"
+                                                stroke="currentColor"
+                                                stroke-width="1.7"
+                                                stroke-linecap="round"
+                                            />
+                                        </svg>
+                                        <strong>Regen · 14°</strong>
+                                        <span>Nur drinnen</span>
+                                    </div>
+                                </div>
+                                <div class="roster">
+                                    <div class="roster__row">
+                                        <b>Terrasse</b>
+                                        <span class="roster__bar" style="width: 92%"></span>
+                                        <span class="roster__count">6 Mitarbeitende</span>
+                                    </div>
+                                    <div class="roster__row">
+                                        <b>Bar</b>
+                                        <span class="roster__bar" style="width: 64%"></span>
+                                        <span class="roster__count">4 Mitarbeitende</span>
+                                    </div>
+                                    <div class="roster__row">
+                                        <b>Küche</b>
+                                        <span class="roster__bar" style="width: 78%"></span>
+                                        <span class="roster__count">5 Mitarbeitende</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ============ Feature 3: Crypto payments ============ -->
+            <section class="section section--paper2">
+                <div class="wrap">
+                    <div class="feature">
+                        <div class="feature__body reveal">
+                            <span class="eyebrow">Krypto-Zahlungen</span>
+                            <h2>Bitcoin, Tether und MyLuga an der Kasse</h2>
+                            <p>
+                                Lugano ist eine Stadt der digitalen Währungen. Mit Gabbani Tech zahlen Ihre Kunden in
+                                MyLuga, Bitcoin oder Tether und jede Transaktion wird automatisch über Open CryptoPay
+                                abgewickelt, ein Produkt der DFX AG.
+                            </p>
+                            <div class="coins" style="margin: 8px 0 28px">
+                                <div class="coin">
+                                    <img
+                                        class="coin__logo coin__logo--lvga"
+                                        src="../assets/lvga-mark.png"
+                                        alt="MyLuga (LVGA)"
+                                    />
+                                    <span class="coin__txt">
+                                        <strong>MyLuga</strong>
+                                        <span>LVGA</span>
+                                    </span>
+                                </div>
+                                <div class="coin">
+                                    <img class="coin__logo" src="../assets/bitcoin.svg" alt="Bitcoin" />
+                                    <span class="coin__txt">
+                                        <strong>Bitcoin</strong>
+                                        <span>BTC</span>
+                                    </span>
+                                </div>
+                                <div class="coin">
+                                    <img class="coin__logo" src="../assets/tether.svg" alt="Tether" />
+                                    <span class="coin__txt">
+                                        <strong>Tether</strong>
+                                        <span>USDT</span>
+                                    </span>
+                                </div>
+                            </div>
+                            <a href="/de/payments.html" class="btn btn--primary">Krypto-Zahlungen entdecken</a>
+                        </div>
+
+                        <div class="feature__media reveal d1">
+                            <div class="diagram">
+                                <div class="diagram__cap">
+                                    <span>Zahlungsführung</span>
+                                    <span>Open CryptoPay</span>
+                                </div>
+                                <div class="flow">
+                                    <div class="node">
+                                        <span class="node__ico">
+                                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+                                                <rect
+                                                    x="5"
+                                                    y="3"
+                                                    width="14"
+                                                    height="18"
+                                                    rx="2"
+                                                    stroke="currentColor"
+                                                    stroke-width="1.7"
+                                                />
+                                                <path
+                                                    d="M9 7h6M9 11h6M9 15h3"
+                                                    stroke="currentColor"
+                                                    stroke-width="1.7"
+                                                    stroke-linecap="round"
+                                                />
+                                            </svg>
+                                        </span>
+                                        <span class="node__txt">
+                                            <strong>Kunde zahlt</strong>
+                                            <span>Scannt den QR-Code an der Kasse</span>
+                                        </span>
+                                        <span class="node__val">CHF 8.40</span>
+                                    </div>
+                                    <div class="flow__connector">
+                                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                                            <path
+                                                d="M12 4v16M6 14l6 6 6-6"
+                                                stroke="currentColor"
+                                                stroke-width="2"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                            />
+                                        </svg>
+                                    </div>
+                                    <div class="node" style="border-color: var(--bordeaux)">
+                                        <span class="node__ico">
+                                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+                                                <path
+                                                    d="M12 2l8 4v6c0 5-3.5 8-8 10-4.5-2-8-5-8-10V6l8-4z"
+                                                    stroke="currentColor"
+                                                    stroke-width="1.7"
+                                                    stroke-linejoin="round"
+                                                />
+                                            </svg>
+                                        </span>
+                                        <span class="node__txt">
+                                            <strong>Open CryptoPay</strong>
+                                            <span>von DFX AG · leitet &amp; wickelt ab</span>
+                                        </span>
+                                    </div>
+                                    <div class="flow__connector">
+                                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                                            <path
+                                                d="M12 4v16M6 14l6 6 6-6"
+                                                stroke="currentColor"
+                                                stroke-width="2"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                            />
+                                        </svg>
+                                    </div>
+                                    <div class="coins">
+                                        <div class="coin">
+                                            <img
+                                                class="coin__logo coin__logo--lvga"
+                                                src="../assets/lvga-mark.png"
+                                                alt="MyLuga (LVGA)"
+                                            />
+                                            <span class="coin__txt">
+                                                <strong>MyLuga</strong>
+                                                <span>LVGA</span>
+                                            </span>
+                                        </div>
+                                        <div class="coin">
+                                            <img class="coin__logo" src="../assets/bitcoin.svg" alt="Bitcoin" />
+                                            <span class="coin__txt">
+                                                <strong>Bitcoin</strong>
+                                                <span>BTC</span>
+                                            </span>
+                                        </div>
+                                        <div class="coin">
+                                            <img class="coin__logo" src="../assets/tether.svg" alt="Tether" />
+                                            <span class="coin__txt">
+                                                <strong>Tether</strong>
+                                                <span>USDT</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ============ How it works ============ -->
+            <section class="section section--paper2">
+                <div class="wrap">
+                    <div class="section-head reveal">
+                        <span class="eyebrow">So funktioniert es</span>
+                        <h2>In vier Schritten live</h2>
+                    </div>
+                    <div class="steps" style="margin-top: 40px">
+                        <div class="step reveal">
+                            <span class="step__n">1</span>
+                            <div>
+                                <h3>Kasse verbinden</h3>
+                                <p>
+                                    Wir verbinden Gabbani Tech mit Ihrem bestehenden Kassensystem und Ihren Waagen. Kein
+                                    Austausch von Grund auf, keine neue Hardware zum Lernen.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="step reveal">
+                            <span class="step__n">2</span>
+                            <div>
+                                <h3>Verkäufe streamen live</h3>
+                                <p>
+                                    Jede bezahlte Transaktion fliesst in Echtzeit in Ihr Dashboard: Produkt, Gewicht,
+                                    Betrag, Kasse und Filiale.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="step reveal">
+                            <span class="step__n">3</span>
+                            <div>
+                                <h3>Nach dem Wetter planen</h3>
+                                <p>
+                                    Schalten Sie die wetterbasierte Personalplanung ein und lassen Sie das System
+                                    Dienstpläne für Ihren Aussenservice entwerfen, bevor die Woche beginnt.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="step reveal">
+                            <span class="step__n">4</span>
+                            <div>
+                                <h3>Krypto-Zahlungen ergänzen</h3>
+                                <p>
+                                    Aktivieren Sie MyLuga, Bitcoin und Tether über Open CryptoPay, sobald Sie bereit
+                                    sind. Die Abwicklung läuft automatisch.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ============ CTA ============ -->
+            <section class="section section--ink cta-band">
+                <div class="wrap reveal">
+                    <span class="eyebrow" style="justify-content: center">Lugano · Schweiz</span>
+                    <h2 style="margin-top: 18px">Bringen Sie Ihre Theke auf einen Live-Feed</h2>
+                    <p class="lead">
+                        Buchen Sie eine 30-minütige Demo und beobachten Sie, wie ein Verkauf in Echtzeit von der Waage
+                        ins Dashboard wandert.
+                    </p>
+                    <a href="/de/contact.html" class="btn btn--primary btn--lg">Demo buchen</a>
                 </div>
             </section>
         </main>
 
-        <footer>
-            <div class="footer-content">
-                <span class="footer-name">Gabbani Tech</span>
-                <nav class="footer-nav">
-                    <a href="#about">Über uns</a>
-                    <a href="#services">Leistungen</a>
-                    <a href="#values">Werte</a>
-                    <a href="#contact">Kontakt</a>
-                    <a href="/de/legal.html">Rechtliches &amp; Datenschutz</a>
-                </nav>
-                <a href="https://github.com/GabbaniTech" class="footer-social" aria-label="GitHub">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                        <path
-                            d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"
-                        />
-                    </svg>
-                </a>
+        <footer class="site-footer">
+            <div class="wrap">
+                <div class="footer-top">
+                    <div class="footer-brand">
+                        <a href="/de/" class="brand" aria-label="Gabbani Tech Startseite">
+                            <svg class="brand__mark" viewBox="0 0 100 100" aria-hidden="true">
+                                <g
+                                    transform="translate(50 47) scale(0.6) translate(-36 -52)"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="14"
+                                >
+                                    <path d="M50 12 L34 12 A22 22 0 0 0 12 34 L12 70 A22 22 0 0 0 34 92 L50 92" />
+                                    <path d="M50 92 L60 92 L60 53 L41 53" />
+                                </g>
+                                <rect x="28" y="79" width="44" height="10" rx="2" fill="currentColor" />
+                            </svg>
+                            <span class="brand__type">
+                                <span class="brand__name">Gabbani</span>
+                                <span class="brand__sub">Tech · Lugano</span>
+                            </span>
+                        </a>
+                        <p>
+                            Echtzeit-Technologie für den Handel, entstanden aus einer Institution in Lugano, die die
+                            Stadt seit 1937 begleitet.
+                        </p>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Produkt</h4>
+                        <a href="/de/platform.html">Echtzeit-Kasse</a>
+                        <a href="/de/staffing.html">Wetterbasierte Personalplanung</a>
+                        <a href="/de/payments.html">Krypto-Zahlungen</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Unternehmen</h4>
+                        <a href="/de/about.html">Über uns</a>
+                        <a href="/de/contact.html">Kontakt</a>
+                        <a href="/de/legal.html">Recht &amp; Datenschutz</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Kontakt</h4>
+                        <a href="mailto:hello@gabbani.tech">hello@gabbani.tech</a>
+                        <a href="/de/contact.html">Demo buchen</a>
+                        <span class="footer-place" style="color: var(--on-night-muted); font-size: 14.5px">
+                            Lugano, Schweiz
+                        </span>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>© 2026 Gabbani Tech, Lugano, Schweiz</p>
+                    <div class="footer-social">
+                        <a href="https://github.com/GabbaniTech" aria-label="GitHub">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"
+                                />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
             </div>
         </footer>
 
-        <script src="../assets/ui.js"></script>
+        <script src="../assets/site.js"></script>
+        <script src="../assets/gb-ai-popup.js" defer></script>
+        <script src="../assets/sea-attribution.js" defer></script>
     </body>
 </html>

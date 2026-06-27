@@ -1,0 +1,36 @@
+# Gabbani Tech
+
+> Gabbani Tech is a Lugano (Switzerland) startup building real-time retail technology for shops, delis and restaurants. It turns the checkout counter into a live feed, plans staff around the weather, and accepts crypto payments. Born from the Gabbani name, a Lugano institution serving the city since 1937.
+
+## What Gabbani Tech does
+
+- **Real-time checkout**: every paid sale reaches the management dashboard the instant it happens, with the product name, exact weight (to the gram), amount, till and branch. No end-of-day export.
+- **Weather-smart staffing**: reads the local weather forecast and proposes shift plans automatically (more staff on a sunny terrace day, fewer in the rain). Owners can also plan reduced hours or free days, let staff pick days on a calendar, and set rules such as "everyone gets one free Sunday". Every plan is a draft the owner approves.
+- **Crypto payments**: customers can pay in MyLuga (LVGA), Bitcoin (BTC) or Tether (USDT) at the till. Payments are routed and settled by Open CryptoPay, a product of DFX AG. Merchants are quoted and recorded in Swiss francs.
+
+## Key facts
+
+- Company: Gabbani Tech
+- Location: Lugano, Ticino, Switzerland
+- Focus market: Lugano (initially)
+- Stage: startup
+- Heritage: built on the Gabbani name, in Lugano since 1937
+- Contact: hello@gabbani.tech
+- Languages: English (default), German, French, Italian, Spanish
+
+## Pages
+
+- [Home](https://gabbani.tech/): overview of the three products
+- [Real-time checkout](https://gabbani.tech/platform.html): the live sale-to-dashboard flow
+- [Weather-smart staffing](https://gabbani.tech/staffing.html): forecast-driven rotas, reduced hours, free-day rules
+- [Crypto payments](https://gabbani.tech/payments.html): MyLuga, Bitcoin and Tether via Open CryptoPay (DFX AG)
+- [About](https://gabbani.tech/about.html): the company and its Lugano roots
+- [Contact](https://gabbani.tech/contact.html): book a demo
+
+## Related
+
+- Open CryptoPay (payment processing): https://opencryptopay.io
+- DFX AG (Swiss provider behind Open CryptoPay): https://dfx.swiss
+- Detailed machine profile: https://gabbani.tech/llms-full.txt
+- Agent instructions: https://gabbani.tech/agents.txt
+- Structured index: https://gabbani.tech/ai-index.json

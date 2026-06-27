@@ -1,0 +1,64 @@
+{
+    "schema_version": "1.0",
+    "last_updated": "2026-06-26",
+    "site": {
+        "name": "Gabbani Tech",
+        "canonical_url": "https://gabbani.tech",
+        "primary_language": "en",
+        "supported_languages": ["en", "de", "fr", "it", "es"],
+        "description": "Lugano startup building real-time retail technology: real-time checkout, weather-smart staffing and crypto payments via Open CryptoPay (a product of DFX AG).",
+        "short_profile": "https://gabbani.tech/llms.txt",
+        "full_profile": "https://gabbani.tech/llms-full.txt",
+        "agent_instructions": "https://gabbani.tech/agents.txt",
+        "sitemap": "https://gabbani.tech/sitemap.xml",
+        "robots": "https://gabbani.tech/robots.txt"
+    },
+    "organization": {
+        "name": "Gabbani Tech",
+        "type": "Startup",
+        "address": "Lugano, Ticino, Switzerland",
+        "founded_context": "Built on the Gabbani name, in Lugano since 1937",
+        "email": "hello@gabbani.tech",
+        "website": "https://gabbani.tech"
+    },
+    "products": [
+        {
+            "name": "Real-time checkout",
+            "url": "https://gabbani.tech/platform.html",
+            "summary": "Every paid sale reaches the management dashboard the instant it happens, with product name, exact weight, amount, till and branch.",
+            "keywords": ["real-time POS", "live checkout", "weighed sales", "management dashboard", "retail analytics"]
+        },
+        {
+            "name": "Weather-smart staffing",
+            "url": "https://gabbani.tech/staffing.html",
+            "summary": "Reads the weather forecast and drafts shift plans automatically; supports reduced hours, free days picked on a calendar, and rules such as one free Sunday for everyone.",
+            "keywords": [
+                "staff scheduling",
+                "weather forecast",
+                "shift planning",
+                "rota",
+                "terrace staffing",
+                "free days"
+            ]
+        },
+        {
+            "name": "Crypto payments",
+            "url": "https://gabbani.tech/payments.html",
+            "summary": "Accept MyLuga (LVGA), Bitcoin and Tether at the till, settled through Open CryptoPay, a product of DFX AG. Quoted and recorded in Swiss francs.",
+            "keywords": ["crypto payments", "Bitcoin", "Tether", "MyLuga", "LVGA", "Open CryptoPay", "DFX AG", "Lugano"]
+        }
+    ],
+    "pages": [
+        { "title": "Home", "url": "https://gabbani.tech/" },
+        { "title": "Real-time checkout", "url": "https://gabbani.tech/platform.html" },
+        { "title": "Weather-smart staffing", "url": "https://gabbani.tech/staffing.html" },
+        { "title": "Crypto payments", "url": "https://gabbani.tech/payments.html" },
+        { "title": "About", "url": "https://gabbani.tech/about.html" },
+        { "title": "Contact", "url": "https://gabbani.tech/contact.html" }
+    ],
+    "related_entities": [
+        { "name": "Open CryptoPay", "role": "Crypto payment processing", "url": "https://opencryptopay.io" },
+        { "name": "DFX AG", "role": "Swiss provider behind Open CryptoPay", "url": "https://dfx.swiss" }
+    ],
+    "contact": { "email": "hello@gabbani.tech", "location": "Lugano, Switzerland" }
+}

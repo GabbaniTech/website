@@ -3,6 +3,7 @@
     "rules": {
         "void-style": ["error", { "style": "selfclosing" }],
         "doctype-style": ["error", { "style": "lowercase" }],
-        "unique-landmark": "off"
+        "unique-landmark": "off",
+        "no-inline-style": "off"
     }
 }
