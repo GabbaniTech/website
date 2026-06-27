@@ -3,111 +3,244 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Legal &amp; Privacy — Gabbani Tech</title>
-        <meta name="description" content="Legal notice and privacy policy for Gabbani Tech." />
+        <title>Legal &amp; privacy · Gabbani Tech</title>
+        <meta name="description" content="Legal notice and privacy policy for Gabbani Tech, Lugano." />
         <meta name="robots" content="noindex" />
-        <link rel="stylesheet" type="text/css" href="style.css" />
         <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="style.css" />
+        <link rel="alternate" type="text/plain" href="https://gabbani.tech/llms.txt" title="LLM-readable profile" />
+        <link
+            rel="alternate"
+            type="application/json"
+            href="https://gabbani.tech/ai-index.json"
+            title="AI-readable site index"
+        />
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@graph": [
+                    {
+                        "@type": "Organization",
+                        "@id": "https://gabbani.tech/#org",
+                        "name": "Gabbani Tech",
+                        "url": "https://gabbani.tech/",
+                        "email": "hello@gabbani.tech",
+                        "slogan": "Real-time retail technology from Lugano",
+                        "address": {
+                            "@type": "PostalAddress",
+                            "addressLocality": "Lugano",
+                            "addressRegion": "Ticino",
+                            "addressCountry": "CH"
+                        },
+                        "areaServed": "Lugano",
+                        "sameAs": ["https://github.com/GabbaniTech"]
+                    },
+                    {
+                        "@type": "WebSite",
+                        "@id": "https://gabbani.tech/#website",
+                        "url": "https://gabbani.tech/",
+                        "name": "Gabbani Tech",
+                        "publisher": { "@id": "https://gabbani.tech/#org" },
+                        "inLanguage": ["en", "de", "fr", "it", "es"]
+                    }
+                ]
+            }
+        </script>
     </head>
 
     <body>
-        <header class="fade-in">
-            <a href="/" class="logo-link">
-                <span class="logo-text">Gabbani Tech</span>
-            </a>
-            <nav>
-                <a href="/#about">About</a>
-                <a href="/#services">Services</a>
-                <a href="/#values">Values</a>
-                <a href="/#contact">Contact</a>
-            </nav>
-            <div class="lang-switcher">
-                <span class="lang-current">EN</span>
-                <div class="lang-dropdown">
-                    <a href="/legal.html" class="active">English</a>
-                    <a href="/de/legal.html">Deutsch</a>
-                    <a href="/fr/legal.html">Français</a>
-                    <a href="/it/legal.html">Italiano</a>
-                    <a href="/es/legal.html">Español</a>
+        <header class="site-header" id="header">
+            <div class="wrap">
+                <a href="/" class="brand" aria-label="Gabbani Tech home">
+                    <svg class="brand__mark" viewBox="0 0 100 100" aria-hidden="true">
+                        <g
+                            transform="translate(50 47) scale(0.6) translate(-36 -52)"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="14"
+                        >
+                            <path d="M50 12 L34 12 A22 22 0 0 0 12 34 L12 70 A22 22 0 0 0 34 92 L50 92" />
+                            <path d="M50 92 L60 92 L60 53 L41 53" />
+                        </g>
+                        <rect x="28" y="79" width="44" height="10" rx="2" fill="currentColor" />
+                    </svg>
+                    <span class="brand__type">
+                        <span class="brand__name">Gabbani</span>
+                        <span class="brand__sub">Tech · Lugano</span>
+                    </span>
+                </a>
+                <nav class="primary-nav" aria-label="Primary">
+                    <a href="/platform.html">Platform</a>
+                    <a href="/staffing.html">Staffing</a>
+                    <a href="/payments.html">Payments</a>
+                    <a href="/about.html">About</a>
+                    <a href="/contact.html">Contact</a>
+                </nav>
+                <div class="header-tools">
+                    <div class="lang" id="lang">
+                        <button type="button" class="lang__current" aria-haspopup="true" aria-expanded="false">
+                            EN
+                        </button>
+                        <div class="lang__menu lang-dropdown" role="menu">
+                            <a href="/legal.html" aria-current="true">
+                                English
+                                <span>EN</span>
+                            </a>
+                            <a href="/de/legal.html">
+                                Deutsch
+                                <span>DE</span>
+                            </a>
+                            <a href="/fr/legal.html">
+                                Français
+                                <span>FR</span>
+                            </a>
+                            <a href="/it/legal.html">
+                                Italiano
+                                <span>IT</span>
+                            </a>
+                            <a href="/es/legal.html">
+                                Español
+                                <span>ES</span>
+                            </a>
+                        </div>
+                    </div>
+                    <a href="/contact.html" class="btn btn--primary header-cta">Get a demo</a>
+                    <button type="button" class="nav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
                 </div>
             </div>
-            <button class="nav-toggle" type="button" aria-label="Menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
         </header>
 
-        <div class="legal-page">
-            <section>
-                <h1>Legal Notice</h1>
-                <h2>Imprint</h2>
-                <p>
-                    Gabbani Tech
-                    <br />
-                    Example Street 1
-                    <br />
-                    8000 Example City
-                    <br />
-                    Switzerland
-                </p>
-                <p>
-                    Email:
-                    <a href="mailto:hello@gabbani.tech">hello@gabbani.tech</a>
-                </p>
-                <p>Commercial register / VAT: CHE-000.000.000 (placeholder)</p>
-            </section>
+        <main class="doc">
+            <h1>Legal notice</h1>
+            <h2>Imprint</h2>
+            <p>
+                Gabbani Tech
+                <br />
+                Example Street 1
+                <br />
+                6900 Lugano
+                <br />
+                Switzerland
+            </p>
+            <p>
+                Email:
+                <a href="mailto:hello@gabbani.tech">hello@gabbani.tech</a>
+            </p>
+            <p>Commercial register / VAT: CHE-000.000.000 (placeholder)</p>
 
-            <section>
-                <h1>Privacy</h1>
-                <h2>Privacy Policy</h2>
-                <h3>Overview</h3>
-                <p>
-                    We take the protection of your personal data seriously. This website is intentionally minimal and
-                    collects as little data as technically possible.
-                </p>
-                <h3>Hosting</h3>
-                <p>
-                    This site is hosted on Cloudflare Pages. The hosting provider may process technical access data
-                    (such as IP address, browser type, and time of access) in server log files for the purpose of
-                    operating and securing the service.
-                </p>
-                <h3>Cookies &amp; Local Storage</h3>
-                <p>
-                    We do not use tracking cookies. We store a single technical flag in your browser's session storage
-                    to remember your language choice. It is cleared when you close the tab.
-                </p>
-                <h3>Contact</h3>
-                <p>
-                    When you contact us by email, we process the information you provide solely to handle your request.
-                </p>
-                <h3>Your Rights</h3>
-                <p>
-                    You may request information about, correction of, or deletion of your personal data at any time by
-                    writing to
-                    <a href="mailto:hello@gabbani.tech">hello@gabbani.tech</a>
-                    .
-                </p>
-            </section>
-        </div>
+            <h1 style="margin-top: 56px">Privacy</h1>
+            <h2>Overview</h2>
+            <p>
+                We take the protection of your personal data seriously. This website is intentionally minimal and
+                collects as little data as technically possible.
+            </p>
+            <h2>Hosting</h2>
+            <p>
+                This site is hosted on Cloudflare Pages. The hosting provider may process technical access data (such as
+                IP address, browser type and time of access) in server log files for the purpose of operating and
+                securing the service.
+            </p>
+            <h2>Cookies &amp; local storage</h2>
+            <p>
+                We do not use tracking cookies. We store a single technical flag in your browser's session storage to
+                remember your language choice. It is cleared when you close the tab.
+            </p>
+            <h2>Fonts</h2>
+            <p>
+                We load typefaces from Google Fonts. When a font is requested, your browser contacts Google's servers,
+                which may receive your IP address for the purpose of delivering the font.
+            </p>
+            <h2>Payments</h2>
+            <p>
+                Crypto payments demonstrated on this site are processed by Open CryptoPay, a product of DFX AG. Gabbani
+                Tech does not itself hold or transfer crypto assets.
+            </p>
+            <h2>Contact</h2>
+            <p>When you contact us by email, we process the information you provide solely to handle your request.</p>
+            <h2>Your rights</h2>
+            <p>
+                You may request information about, correction of, or deletion of your personal data at any time by
+                writing to
+                <a href="mailto:hello@gabbani.tech">hello@gabbani.tech</a>
+                .
+            </p>
+        </main>
 
-        <footer>
-            <div class="footer-content">
-                <span class="footer-name">Gabbani Tech</span>
-                <nav class="footer-nav">
-                    <a href="/">Home</a>
-                    <a href="/legal.html">Legal &amp; Privacy</a>
-                </nav>
-                <a href="https://github.com/GabbaniTech" class="footer-social" aria-label="GitHub">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                        <path
-                            d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"
-                        />
-                    </svg>
-                </a>
+        <footer class="site-footer">
+            <div class="wrap">
+                <div class="footer-top">
+                    <div class="footer-brand">
+                        <a href="/" class="brand" aria-label="Gabbani Tech home">
+                            <svg class="brand__mark" viewBox="0 0 100 100" aria-hidden="true">
+                                <g
+                                    transform="translate(50 47) scale(0.6) translate(-36 -52)"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="14"
+                                >
+                                    <path d="M50 12 L34 12 A22 22 0 0 0 12 34 L12 70 A22 22 0 0 0 34 92 L50 92" />
+                                    <path d="M50 92 L60 92 L60 53 L41 53" />
+                                </g>
+                                <rect x="28" y="79" width="44" height="10" rx="2" fill="currentColor" />
+                            </svg>
+                            <span class="brand__type">
+                                <span class="brand__name">Gabbani</span>
+                                <span class="brand__sub">Tech · Lugano</span>
+                            </span>
+                        </a>
+                        <p>
+                            Real-time retail technology, born from a Lugano institution that has served the city since
+                            1937.
+                        </p>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Product</h4>
+                        <a href="/platform.html">Real-time checkout</a>
+                        <a href="/staffing.html">Weather-smart staffing</a>
+                        <a href="/payments.html">Crypto payments</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Company</h4>
+                        <a href="/about.html">About</a>
+                        <a href="/contact.html">Contact</a>
+                        <a href="/legal.html">Legal &amp; privacy</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Contact</h4>
+                        <a href="mailto:hello@gabbani.tech">hello@gabbani.tech</a>
+                        <a href="/contact.html">Book a demo</a>
+                        <span class="footer-place" style="color: var(--on-night-muted); font-size: 14.5px">
+                            Lugano, Switzerland
+                        </span>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>© 2026 Gabbani Tech, Lugano, Switzerland</p>
+                    <div class="footer-social">
+                        <a href="https://github.com/GabbaniTech" aria-label="GitHub">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"
+                                />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
             </div>
         </footer>
 
-        <script src="assets/ui.js"></script>
+        <script src="assets/site.js"></script>
+        <script src="assets/gb-ai-popup.js" defer></script>
+        <script src="assets/sea-attribution.js" defer></script>
     </body>
 </html>

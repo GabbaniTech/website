@@ -1,4 +1,24 @@
 User-agent: *
 Allow: /
 
+# AI assistants & answer engines welcome — machine-readable profiles:
+#   /llms.txt /llms-full.txt /agents.txt /ai-index.json
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
 Sitemap: https://gabbani.tech/sitemap.xml

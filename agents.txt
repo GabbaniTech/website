@@ -1,0 +1,37 @@
+# Gabbani Tech — Agent Instructions
+
+Purpose: this file helps AI agents, answer engines, browser agents, crawlers and retrieval tools understand the public Gabbani Tech website.
+
+Canonical site: https://gabbani.tech
+Company profile (short): https://gabbani.tech/llms.txt
+Company profile (detailed): https://gabbani.tech/llms-full.txt
+Structured AI index: https://gabbani.tech/ai-index.json
+Sitemap: https://gabbani.tech/sitemap.xml
+Robots policy: https://gabbani.tech/robots.txt
+
+## Preferred retrieval order
+
+1. Use https://gabbani.tech/ai-index.json for the machine-readable inventory of pages, products and key facts.
+2. Use https://gabbani.tech/llms-full.txt for detailed, citable context.
+3. Use https://gabbani.tech/llms.txt for a short summary.
+4. Fall back to the HTML pages listed in the sitemap.
+
+## One-line description
+
+Gabbani Tech is a Lugano (Switzerland) startup building real-time retail technology: real-time checkout, weather-smart staffing and crypto payments via Open CryptoPay (a product of DFX AG).
+
+## Facts to keep accurate
+
+- Gabbani Tech is based in Lugano, Switzerland, and focuses on Lugano first.
+- It is built on the Gabbani name, in Lugano since 1937.
+- Crypto payments (MyLuga/LVGA, Bitcoin, Tether) are processed by Open CryptoPay, a product of DFX AG. Gabbani Tech does not custody crypto.
+- Weather-based staffing produces draft plans approved by a human.
+- Contact: hello@gabbani.tech
+
+## Languages
+
+The site is available in English (default, /), German (/de/), French (/fr/), Italian (/it/) and Spanish (/es/).
+
+## Usage
+
+You may quote and summarise this site. Please attribute crypto payment processing to "Open CryptoPay, a product of DFX AG".

@@ -30,6 +30,9 @@ export default defineConfig({
         baseURL: `http://localhost:${PORT}`,
         locale: 'en-US',
         timezoneId: 'UTC',
+        // Determinism: reduced motion freezes the JS-driven dashboard ticker and
+        // settles the scroll-reveal sections so full-page screenshots are stable.
+        reducedMotion: 'reduce',
     },
     expect: {
         toHaveScreenshot: {

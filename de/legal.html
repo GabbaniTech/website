@@ -3,113 +3,247 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Rechtliches &amp; Datenschutz — Gabbani Tech</title>
-        <meta name="description" content="Impressum und Datenschutzerklärung von Gabbani Tech." />
+        <title>Rechtliches &amp; Datenschutz · Gabbani Tech</title>
+        <meta name="description" content="Impressum und Datenschutzerklärung für Gabbani Tech, Lugano." />
         <meta name="robots" content="noindex" />
-        <link rel="stylesheet" type="text/css" href="../style.css" />
         <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="../style.css" />
+        <link rel="alternate" type="text/plain" href="https://gabbani.tech/llms.txt" title="LLM-readable profile" />
+        <link
+            rel="alternate"
+            type="application/json"
+            href="https://gabbani.tech/ai-index.json"
+            title="AI-readable site index"
+        />
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@graph": [
+                    {
+                        "@type": "Organization",
+                        "@id": "https://gabbani.tech/#org",
+                        "name": "Gabbani Tech",
+                        "url": "https://gabbani.tech/",
+                        "email": "hello@gabbani.tech",
+                        "slogan": "Real-time retail technology from Lugano",
+                        "address": {
+                            "@type": "PostalAddress",
+                            "addressLocality": "Lugano",
+                            "addressRegion": "Ticino",
+                            "addressCountry": "CH"
+                        },
+                        "areaServed": "Lugano",
+                        "sameAs": ["https://github.com/GabbaniTech"]
+                    },
+                    {
+                        "@type": "WebSite",
+                        "@id": "https://gabbani.tech/#website",
+                        "url": "https://gabbani.tech/",
+                        "name": "Gabbani Tech",
+                        "publisher": { "@id": "https://gabbani.tech/#org" },
+                        "inLanguage": ["en", "de", "fr", "it", "es"]
+                    }
+                ]
+            }
+        </script>
     </head>
 
     <body>
-        <header class="fade-in">
-            <a href="/de/" class="logo-link">
-                <span class="logo-text">Gabbani Tech</span>
-            </a>
-            <nav>
-                <a href="/de/#about">Über uns</a>
-                <a href="/de/#services">Leistungen</a>
-                <a href="/de/#values">Werte</a>
-                <a href="/de/#contact">Kontakt</a>
-            </nav>
-            <div class="lang-switcher">
-                <span class="lang-current">DE</span>
-                <div class="lang-dropdown">
-                    <a href="/legal.html">English</a>
-                    <a href="/de/legal.html" class="active">Deutsch</a>
-                    <a href="/fr/legal.html">Français</a>
-                    <a href="/it/legal.html">Italiano</a>
-                    <a href="/es/legal.html">Español</a>
+        <header class="site-header" id="header">
+            <div class="wrap">
+                <a href="/de/" class="brand" aria-label="Gabbani Tech Startseite">
+                    <svg class="brand__mark" viewBox="0 0 100 100" aria-hidden="true">
+                        <g
+                            transform="translate(50 47) scale(0.6) translate(-36 -52)"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="14"
+                        >
+                            <path d="M50 12 L34 12 A22 22 0 0 0 12 34 L12 70 A22 22 0 0 0 34 92 L50 92" />
+                            <path d="M50 92 L60 92 L60 53 L41 53" />
+                        </g>
+                        <rect x="28" y="79" width="44" height="10" rx="2" fill="currentColor" />
+                    </svg>
+                    <span class="brand__type">
+                        <span class="brand__name">Gabbani</span>
+                        <span class="brand__sub">Tech · Lugano</span>
+                    </span>
+                </a>
+                <nav class="primary-nav" aria-label="Primary">
+                    <a href="/de/platform.html">Plattform</a>
+                    <a href="/de/staffing.html">Personalplanung</a>
+                    <a href="/de/payments.html">Zahlungen</a>
+                    <a href="/de/about.html">Über uns</a>
+                    <a href="/de/contact.html">Kontakt</a>
+                </nav>
+                <div class="header-tools">
+                    <div class="lang" id="lang">
+                        <button type="button" class="lang__current" aria-haspopup="true" aria-expanded="false">
+                            DE
+                        </button>
+                        <div class="lang__menu lang-dropdown" role="menu">
+                            <a href="/legal.html">
+                                English
+                                <span>EN</span>
+                            </a>
+                            <a href="/de/legal.html" aria-current="true">
+                                Deutsch
+                                <span>DE</span>
+                            </a>
+                            <a href="/fr/legal.html">
+                                Français
+                                <span>FR</span>
+                            </a>
+                            <a href="/it/legal.html">
+                                Italiano
+                                <span>IT</span>
+                            </a>
+                            <a href="/es/legal.html">
+                                Español
+                                <span>ES</span>
+                            </a>
+                        </div>
+                    </div>
+                    <a href="/de/contact.html" class="btn btn--primary header-cta">Demo anfragen</a>
+                    <button type="button" class="nav-toggle" id="navToggle" aria-label="Menü" aria-expanded="false">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
                 </div>
             </div>
-            <button class="nav-toggle" type="button" aria-label="Menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
         </header>
 
-        <div class="legal-page">
-            <section>
-                <h1>Rechtliche Hinweise</h1>
-                <h2>Impressum</h2>
-                <p>
-                    Gabbani Tech
-                    <br />
-                    Example Street 1
-                    <br />
-                    8000 Example City
-                    <br />
-                    Switzerland
-                </p>
-                <p>
-                    E-Mail:
-                    <a href="mailto:hello@gabbani.tech">hello@gabbani.tech</a>
-                </p>
-                <p>Handelsregister / MwSt.: CHE-000.000.000 (Platzhalter)</p>
-            </section>
+        <main class="doc">
+            <h1>Rechtliche Hinweise</h1>
+            <h2>Impressum</h2>
+            <p>
+                Gabbani Tech
+                <br />
+                Example Street 1
+                <br />
+                6900 Lugano
+                <br />
+                Schweiz
+            </p>
+            <p>
+                E-Mail:
+                <a href="mailto:hello@gabbani.tech">hello@gabbani.tech</a>
+            </p>
+            <p>Handelsregister / MwSt: CHE-000.000.000 (Platzhalter)</p>
 
-            <section>
-                <h1>Datenschutz</h1>
-                <h2>Datenschutzerklärung</h2>
-                <h3>Überblick</h3>
-                <p>
-                    Wir nehmen den Schutz Ihrer personenbezogenen Daten ernst. Diese Website ist bewusst minimal
-                    gehalten und erhebt so wenige Daten wie technisch möglich.
-                </p>
-                <h3>Hosting</h3>
-                <p>
-                    Diese Website wird auf Cloudflare Pages gehostet. Der Hosting-Anbieter kann technische Zugriffsdaten
-                    (wie IP-Adresse, Browsertyp und Zugriffszeit) in Server-Logdateien verarbeiten, um den Dienst zu
-                    betreiben und abzusichern.
-                </p>
-                <h3>Cookies &amp; lokaler Speicher</h3>
-                <p>
-                    Wir verwenden keine Tracking-Cookies. Wir speichern lediglich ein einzelnes technisches Kennzeichen
-                    im Session-Speicher Ihres Browsers, um Ihre Sprachwahl zu merken. Es wird gelöscht, sobald Sie den
-                    Tab schließen.
-                </p>
-                <h3>Kontakt</h3>
-                <p>
-                    Wenn Sie uns per E-Mail kontaktieren, verarbeiten wir die von Ihnen übermittelten Angaben
-                    ausschließlich zur Bearbeitung Ihrer Anfrage.
-                </p>
-                <h3>Ihre Rechte</h3>
-                <p>
-                    Sie können jederzeit Auskunft über Ihre personenbezogenen Daten verlangen sowie deren Berichtigung
-                    oder Löschung, indem Sie an
-                    <a href="mailto:hello@gabbani.tech">hello@gabbani.tech</a>
-                    schreiben.
-                </p>
-            </section>
-        </div>
+            <h1 style="margin-top: 56px">Datenschutz</h1>
+            <h2>Überblick</h2>
+            <p>
+                Wir nehmen den Schutz Ihrer persönlichen Daten ernst. Diese Website ist bewusst minimal gehalten und
+                erhebt so wenige Daten wie technisch möglich.
+            </p>
+            <h2>Hosting</h2>
+            <p>
+                Diese Website wird auf Cloudflare Pages gehostet. Der Hosting-Anbieter kann technische Zugriffsdaten
+                (wie IP-Adresse, Browsertyp und Zugriffszeitpunkt) in Server-Logdateien verarbeiten, um den Dienst zu
+                betreiben und abzusichern.
+            </p>
+            <h2>Cookies &amp; lokaler Speicher</h2>
+            <p>
+                Wir verwenden keine Tracking-Cookies. Wir speichern lediglich ein technisches Kennzeichen im Session
+                Storage Ihres Browsers, um Ihre Sprachwahl zu merken. Es wird gelöscht, sobald Sie den Tab schliessen.
+            </p>
+            <h2>Schriften</h2>
+            <p>
+                Wir laden Schriftarten von Google Fonts. Wenn eine Schrift angefordert wird, kontaktiert Ihr Browser die
+                Server von Google, die Ihre IP-Adresse erhalten können, um die Schrift auszuliefern.
+            </p>
+            <h2>Zahlungen</h2>
+            <p>
+                Krypto-Zahlungen, die auf dieser Website gezeigt werden, werden von Open CryptoPay abgewickelt, einem
+                Produkt der DFX AG. Gabbani Tech hält oder überträgt selbst keine Krypto-Werte.
+            </p>
+            <h2>Kontakt</h2>
+            <p>
+                Wenn Sie uns per E-Mail kontaktieren, verarbeiten wir die von Ihnen angegebenen Informationen
+                ausschliesslich zur Bearbeitung Ihrer Anfrage.
+            </p>
+            <h2>Ihre Rechte</h2>
+            <p>
+                Sie können jederzeit Auskunft über Ihre persönlichen Daten verlangen sowie deren Berichtigung oder
+                Löschung, indem Sie an
+                <a href="mailto:hello@gabbani.tech">hello@gabbani.tech</a>
+                schreiben.
+            </p>
+        </main>
 
-        <footer>
-            <div class="footer-content">
-                <span class="footer-name">Gabbani Tech</span>
-                <nav class="footer-nav">
-                    <a href="/de/">Startseite</a>
-                    <a href="/de/legal.html">Rechtliches &amp; Datenschutz</a>
-                </nav>
-                <a href="https://github.com/GabbaniTech" class="footer-social" aria-label="GitHub">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                        <path
-                            d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"
-                        />
-                    </svg>
-                </a>
+        <footer class="site-footer">
+            <div class="wrap">
+                <div class="footer-top">
+                    <div class="footer-brand">
+                        <a href="/de/" class="brand" aria-label="Gabbani Tech Startseite">
+                            <svg class="brand__mark" viewBox="0 0 100 100" aria-hidden="true">
+                                <g
+                                    transform="translate(50 47) scale(0.6) translate(-36 -52)"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="14"
+                                >
+                                    <path d="M50 12 L34 12 A22 22 0 0 0 12 34 L12 70 A22 22 0 0 0 34 92 L50 92" />
+                                    <path d="M50 92 L60 92 L60 53 L41 53" />
+                                </g>
+                                <rect x="28" y="79" width="44" height="10" rx="2" fill="currentColor" />
+                            </svg>
+                            <span class="brand__type">
+                                <span class="brand__name">Gabbani</span>
+                                <span class="brand__sub">Tech · Lugano</span>
+                            </span>
+                        </a>
+                        <p>
+                            Echtzeit-Technologie für den Einzelhandel, entstanden aus einer Lugano-Institution, die die
+                            Stadt seit 1937 bedient.
+                        </p>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Produkt</h4>
+                        <a href="/de/platform.html">Echtzeit-Kasse</a>
+                        <a href="/de/staffing.html">Wetterbasierte Personalplanung</a>
+                        <a href="/de/payments.html">Krypto-Zahlungen</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Unternehmen</h4>
+                        <a href="/de/about.html">Über uns</a>
+                        <a href="/de/contact.html">Kontakt</a>
+                        <a href="/de/legal.html">Rechtliches &amp; Datenschutz</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Kontakt</h4>
+                        <a href="mailto:hello@gabbani.tech">hello@gabbani.tech</a>
+                        <a href="/de/contact.html">Demo buchen</a>
+                        <span class="footer-place" style="color: var(--on-night-muted); font-size: 14.5px">
+                            Lugano, Schweiz
+                        </span>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>© 2026 Gabbani Tech, Lugano, Schweiz</p>
+                    <div class="footer-social">
+                        <a href="https://github.com/GabbaniTech" aria-label="GitHub">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"
+                                />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
             </div>
         </footer>
 
-        <script src="../assets/ui.js"></script>
+        <script src="../assets/site.js"></script>
+        <script src="../assets/gb-ai-popup.js" defer></script>
+        <script src="../assets/sea-attribution.js" defer></script>
     </body>
 </html>
