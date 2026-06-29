@@ -77,6 +77,15 @@ npm run e2e:docker:update   # regenerate baselines after an INTENTIONAL visual c
 After an intentional visual change, run `npm run e2e:docker:update` and commit
 the updated PNGs in the **same PR** as the change that caused them.
 
+### No Docker? Regenerate baselines from CI
+
+If you can't run the container locally, push your branch and run the
+**Update visual baselines** workflow from the Actions tab (`Run workflow` → pick
+your branch). It regenerates the baselines inside the pinned container and
+commits them back to your branch, so the visual-regression gate can pass without
+a local Docker setup. See `.github/workflows/update-baselines.yml` for the
+optional `BASELINE_PAT` secret that lets it re-trigger the gate automatically.
+
 ### Footgun: never update baselines on the host
 
 `npm run test:e2e` (raw `playwright test`) renders correctly **only inside the
